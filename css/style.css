@@ -1,0 +1,268 @@
+#loader {
+	height:100vh;
+	width:100vw;
+	background:#123;
+	position:fixed;
+}
+#loading {
+	position: fixed;
+	top: 50%;
+	left:50%;	
+	/*background-color: #72E4E4;*/
+	animation: grow 5s ease-in-out forwards;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 0px 50px #00F6FF inset;
+}
+#loading_text {
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: 50px;
+	color: #fff;
+	position: fixed;
+	top: 75%;
+	left: 50%;;
+	transform: translate(-50%, -50%);
+}
+#loader_circle {
+	position: fixed;
+	top: 50%;
+	left:50%;
+	height:200px;
+	width:200px;
+	background: #1F1F1F;
+	/*box-shadow: 0 0 50px gold,0 0 150px gold, inset 0 20px 20px 40px whitesmoke, inset 30px 0 35px 50px ivory;*/
+	/*box-shadow: 15px 15px 50px #00F6FF,0 0 150px #00BDFF, 0px 0px 50px #00F6FF; */
+	box-shadow: 15px 15px 50px #00F6FF,0 0 150px #00BDFF, 0px 0px 50px #00F6FF inset;
+	animation: rotate 2s linear infinite;
+	/*animation: grow 2s forwards;*/
+	display:block;
+	border-radius:50%;
+	margin-left:-100px;
+	margin-top:-100px;
+}
+
+#loader {
+	background:#123;
+	text-align:center;
+	background-image:
+	linear-gradient(-40deg,#222,transparent,#111), 
+	linear-gradient(40deg,#222,transparent,#111), 
+	linear-gradient(-40deg,#222,transparent,#111),
+	linear-gradient(40deg,#222,transparent,#111)
+	;
+	background-size:300%;
+	background-position:center;
+	transition:1s;
+}
+/*#loader:hover,#loader_circle:hover {background-color:#123;transition:1s;}*/
+
+
+/*@keyframes grow {
+	from {
+		background: #ddd;
+		box-shadow: 0 0 50px gold,0 0 150px gold, inset 0 20px 20px 40px whitesmoke, inset 30px 0 35px 50px ivory;
+	}
+	100% {
+
+	}
+}
+*/
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	} 
+	100% {
+		opacity: 1;
+	}
+}
+
+.fade_in_animation {
+	animation: fade 5s forwards;
+}
+
+.fade_out_animation {
+	/* Play the fade animation for 5s in reverse, "forwards" is the animation-fill-mode which will keep the opacity at 0 after it fades out*/
+	animation: fade 5s reverse forwards;
+}
+
+@keyframes grow {
+	from {
+		height:0px;
+		width:0px;
+	}
+	100% {
+		height:200px;
+		width:200px;
+	}
+}
+
+/*@keyframes blink {
+	from {
+		background: #ddd;
+		box-shadow: 0 0 50px gold,0 0 150px gold, inset 0 20px 20px 40px whitesmoke, inset 30px 0 35px 50px ivory;
+	}
+	100% {
+		background: #ddd;
+	}
+}*/
+
+@keyframes rotate {
+	from {
+		
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+
+.grow_animation {
+  animation-name: grow;
+  animation-duration: 1s;
+}
+
+
+
+
+body {
+	margin: 0;
+}
+
+/* ========= SECTION 0 ========= */
+#section_0 {
+	background: url(../images/san_fran.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	border-bottom: 4px solid #aaa;
+	height: 100vh;
+}
+
+#nav_bar {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	background-color: #ECECEC;
+	border-bottom: 4px solid #aaa;
+}
+
+#nav_bar > ul {
+	margin: 0;
+}
+
+.list_item {
+	display         : inline;
+	list-style-type : none;
+	padding         : 0 5% 0 0;
+	font-family     : 'Arvo', Georgia, Times, serif;
+	font-size       : 25px;
+	line-height     : 70px;
+}
+
+#welcome {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 9em;
+	color: #4E4E4E;
+	margin: 0;
+	padding: 50px 0;
+}
+
+#welcome_caption {
+	font-family: 'Lora', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: #fff;
+	margin: 0 auto;
+	width: 66%;
+	line-height: 25px;
+	padding-bottom:20px;
+}
+
+#profile { 
+	background-image: url("../images/profile.jpg");
+	background-position: 70% 0;
+	background-size: cover;
+	height: 400px;
+	width: 400px;
+	border-radius: 200px;
+	margin: 10px auto;
+	transition: 0.3s ease-in-out;
+}
+
+#profile:hover {
+	-webkit-filter: grayscale(50%);
+	box-shadow: inset 0 0 0 8px #9895EF;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.slide_down_animation {
+  animation-name: slideInDown;
+  animation-duration: 1s;
+}
+
+/* ========= SECTION 1 ========= */
+#section_1 {
+	background-image: url("../images/ice_age.png");
+	text-align: center;
+	padding: 50px 0;
+}
+
+#projects_header {
+	font-family: 'Lobster', Georgia, Times, serif;
+	font-size: 59px;
+	margin: 0;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+}
+
+.project {
+	margin: 10px;
+	display:inline-block;
+	height: 300px;
+	width: 300px;
+	border-radius: 4px;
+	background-color: #888;
+}
+
+.project_title {
+	font-family: 'Lora', Georgia, Times, serif;
+	font-size: 25px;
+	color: #ECECEC;
+	margin: 0;
+}
+
+#hackroulette {
+	background-image: url("../images/hackroulette.png");
+	background-size: contain;
+}
+
+#hackroulette_title {
+	opacity: 0;
+	transition: 1s ease-in-out;
+}
+
+#hackroulette:hover > #hackroulette_title {
+	opacity: 1;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}

@@ -8,47 +8,57 @@
 	<link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Dosis:400,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header id="nav_bar" class="slide_down_animation">
-		<ul>
-			<li class="list_item">About</li>
-			<li class="list_item">Blog</li>
-			<li class="list_item">Github</li>
-			<li class="list_item">Facebook</li>
-			<li class="list_item">LinkedIn</li>
-			<li class="list_item">Projects</li>
-		</ul>
-	</header>
-	<article id="section_0">
-		<h1 id="welcome">Blakelock <span style="color:#D6B9A1">Brown</span></h1>
-		<div id="profile"></div>
-		<p id="welcome_caption">
-			My name is Blake Brown and I am an engineering student, full stack web developer and aspiring entrepreneur. In grade 12 I founded theyouthlink.com, a website to help high school students find life-changing scholarship and summer program opportunities. My passions reside in the plethora of activities that make this world such an exciting place to live in. If you have anything you’d like to talk about, I’d love to hear from you via email at blake.brown@uwaterloo.ca.
-			Have a fantastic day. :)
-		</p>
-	</article>
-	<article id="section_1">
-		<h1 id="projects_header">Projects</h1>
-		<div id="hackroulette" class="project">
-			<h1 id="hackroulette_title" class="project_title">HackRoulette</h1>
-			<p id="hackroulette_description"></p>
-		</div>
-		<div class="project">
-			<h1 class="project_title">HackRoulette</h1>
-		</div>
-		<div class="project">
-			<h1 class="project_title">HackRoulette</h1>
-		</div>
-		<div class="project">
-			<h1 class="project_title">HackRoulette</h1>
-		</div>
-		<div class="project">
-			<h1 class="project_title">HackRoulette</h1>
-		</div>
-	</article>
-	<script src="script.js"></script>
+	<div id="loader">
+		<div id="loader_circle"></div>
+		<div id="loading"></div>
+		<!-- <h1 id="loading_text">Loading</h1> -->
+	</div>
+	<div id="main_content" style="">
+		<header id="nav_bar" class="slide_down_animation" style="display:none">
+			<ul>
+				<li class="list_item">About</li>
+				<li class="list_item">Blog</li>
+				<li class="list_item">Github</li>
+				<li class="list_item">Facebook</li>
+				<li class="list_item">LinkedIn</li>
+				<li class="list_item">Projects</li>
+			</ul>
+		</header>
+		<article id="section_0" style="opacity:0">
+			<h1 id="welcome" style="opacity:0">Blakelock <span style="color:#D4A986">Brown</span></h1>
+			<div id="profile" style="opacity:0"></div>
+			<p id="welcome_caption" style="opacity:0">
+				My name is Blake Brown and I am an engineering student, full stack web developer and aspiring entrepreneur. In grade 12 I founded theyouthlink.com, a website to help high school students find life-changing scholarship and summer program opportunities. My passions reside in the plethora of activities that make this world such an exciting place to live in. If you have anything you’d like to talk about, I’d love to hear from you via email at blake.brown@uwaterloo.ca.
+				Have a fantastic day. :)
+			</p>
+		</article>
+		<article id="section_1" style="display:none">
+			<h1 id="projects_header">Projects</h1>
+			<div id="hackroulette" class="project">
+				<h1 id="hackroulette_title" class="project_title">HackRoulette</h1>
+				<p id="hackroulette_description"></p>
+			</div>
+			<div class="project">
+				<h1 class="project_title">HackRoulette</h1>
+			</div>
+			<div class="project">
+				<h1 class="project_title">HackRoulette</h1>
+			</div>
+			<div class="project">
+				<h1 class="project_title">HackRoulette</h1>
+			</div>
+			<div class="project">
+				<h1 class="project_title">HackRoulette</h1>
+			</div>
+		</article>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
