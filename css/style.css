@@ -1,48 +1,42 @@
-#loader {
-	height:100vh;
-	width:100vw;
-	background:#123;
-	position:fixed;
+/*  ===============================================
+	================== Helpers ====================
+	========= Commonly used CSS Classes  ==========
+	===============================================  */
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-#loading {
-	position: fixed;
-	top: 50%;
-	left:50%;	
-	/*background-color: #72E4E4;*/
-	animation: grow 5s ease-in-out forwards;
-	border-radius: 50%;
-	transform: translate(-50%, -50%);
-	box-shadow: 0px 0px 50px #00F6FF inset;
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
 }
-#loading_text {
-	font-family: 'Arvo', Georgia, Times, serif;
-	font-size: 50px;
-	color: #fff;
-	position: fixed;
-	top: 75%;
-	left: 50%;;
-	transform: translate(-50%, -50%);
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
 }
-#loader_circle {
-	position: fixed;
-	top: 50%;
-	left:50%;
-	height:200px;
-	width:200px;
-	background: #1F1F1F;
-	/*box-shadow: 0 0 50px gold,0 0 150px gold, inset 0 20px 20px 40px whitesmoke, inset 30px 0 35px 50px ivory;*/
-	/*box-shadow: 15px 15px 50px #00F6FF,0 0 150px #00BDFF, 0px 0px 50px #00F6FF; */
-	box-shadow: 15px 15px 50px #00F6FF,0 0 150px #00BDFF, 0px 0px 50px #00F6FF inset;
-	animation: rotate 2s linear infinite;
-	/*animation: grow 2s forwards;*/
-	display:block;
-	border-radius:50%;
-	margin-left:-100px;
-	margin-top:-100px;
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.black-overlay {
+	background-color: rgba(38,38,38,0.3);
 }
 
+/*  ============================= 
+	========= Main Site ========= 
+	=============================  */
+
 #loader {
-	background:#123;
+	position:fixed;
+	height:100vh;
+	width:100vw;
+	background:#0B1723;
 	text-align:center;
 	background-image:
 	linear-gradient(-40deg,#222,transparent,#111), 
@@ -52,9 +46,46 @@
 	;
 	background-size:300%;
 	background-position:center;
-	transition:1s;
 }
-/*#loader:hover,#loader_circle:hover {background-color:#123;transition:1s;}*/
+
+#loading {
+	position: fixed;
+	top: 50%;
+	left:50%;	
+	/*background-color: #72E4E4;*/
+	animation: grow 5s ease-in-out forwards;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: ;
+}
+#loading-text {
+	font-family: 'Arvo', Georgia, Times, serif;
+	font-size: 50px;
+	color: #fff;
+	position: fixed;
+	top: 75%;
+	left: 50%;;
+	transform: translate(-50%, -50%);
+}
+#loader-circle {
+	position: fixed;
+	top: 50%;
+	left:50%;
+	height:200px;
+	width:200px;
+	background: #1F1F1F;
+	/*box-shadow: 0 0 50px gold,0 0 150px gold, inset 0 20px 20px 40px whitesmoke, inset 30px 0 35px 50px ivory;*/
+	/*box-shadow: 15px 15px 50px #00F6FF,0 0 150px #00BDFF, 0px 0px 50px #00F6FF; */
+	box-shadow: 15px 15px 50px #00F6FF,0 0 150px #00BDFF, 0px 0px 50px #00F6FF inset, 0px 0px 50px #00F6FF inset;
+	animation: rotate 2s linear infinite;
+	/*animation: grow 2s forwards;*/
+	display:block;
+	border-radius:50%;
+	margin-left:-100px;
+	margin-top:-100px;
+}
+
+/*#loader:hover,#loader-circle:hover {background-color:#123;transition:1s;}*/
 
 
 /*@keyframes grow {
@@ -77,11 +108,11 @@
 	}
 }
 
-.fade_in_animation {
-	animation: fade 5s forwards;
+.fade-in-animation {
+	animation: fade 1s forwards;
 }
 
-.fade_out_animation {
+.fade-out-animation {
 	/* Play the fade animation for 5s in reverse, "forwards" is the animation-fill-mode which will keep the opacity at 0 after it fades out*/
 	animation: fade 5s reverse forwards;
 }
@@ -116,7 +147,7 @@
 	}
 }
 
-.grow_animation {
+.grow-animation {
   animation-name: grow;
   animation-duration: 1s;
 }
@@ -128,19 +159,18 @@ body {
 	margin: 0;
 }
 
-/* ========= SECTION 0 ========= */
-#section_0 {
-	background: url(../images/san_fran.jpg) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+/*  ============================= 
+	========= SECTION 0 ========= 
+	=============================  */
+#section-0 {
+	background: url(../images/san-fran.jpg) no-repeat center center; 
 	background-size: cover;
 	text-align: center;
 	border-bottom: 4px solid #aaa;
 	height: 100vh;
 }
 
-#nav_bar {
+#nav-bar {
 	position: fixed;
 	width: 100%;
 	text-align: center;
@@ -148,11 +178,11 @@ body {
 	border-bottom: 4px solid #aaa;
 }
 
-#nav_bar > ul {
+#nav-bar > ul {
 	margin: 0;
 }
 
-.list_item {
+.list-item {
 	display         : inline;
 	list-style-type : none;
 	padding         : 0 5% 0 0;
@@ -162,16 +192,18 @@ body {
 }
 
 #welcome {
+	padding-top:70px;
+}
+.welcome {
 	font-family: 'Playfair Display', serif;
 	font-weight: 400;
 	text-transform: uppercase;
 	font-size: 9em;
 	color: #4E4E4E;
 	margin: 0;
-	padding: 50px 0;
 }
 
-#welcome_caption {
+#welcome-caption {
 	font-family: 'Lora', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	color: #fff;
@@ -209,19 +241,20 @@ body {
   }
 }
 
-.slide_down_animation {
-  animation-name: slideInDown;
-  animation-duration: 1s;
+.slide-down-animation {
+  animation: slideInDown 2s forwards;
 }
 
-/* ========= SECTION 1 ========= */
-#section_1 {
-	background-image: url("../images/ice_age.png");
+/*  ============================= 
+	========= SECTION 1 ========= 
+	=============================  */
+#section-1 {
+	background-image: url("../images/ice-age.png");
 	text-align: center;
 	padding: 50px 0;
 }
 
-#projects_header {
+#projects-header {
 	font-family: 'Lobster', Georgia, Times, serif;
 	font-size: 59px;
 	margin: 0;
@@ -229,35 +262,95 @@ body {
 	margin-bottom: 15px;
 }
 
-.project {
-	margin: 10px;
-	display:inline-block;
-	height: 300px;
-	width: 300px;
-	border-radius: 4px;
-	background-color: #888;
+#projects-wrapper {
+	width: 80%;
+	margin: 0 auto;
 }
 
-.project_title {
-	font-family: 'Lora', Georgia, Times, serif;
-	font-size: 25px;
+.project {
+	background-color: #888;
+	border: 1px solid #eee;
+	height: 300px;
+	width: 33.3333%;
+	box-sizing: border-box;
+	float: left;
+}
+
+.black-overlay {
+	width: 100%;
+	height: 100%;
+	position: relative;
+    transition: all 0.25s ease-out;
+}
+
+.project:hover > .black-overlay {
+	background: rgba(33,33,33,0.8);
+	cursor: pointer;
+}
+
+.project-details-wrapper {
+	width: 100%;
+	padding: 10px;
+	position: absolute;
+	margin-top: 20px;
+	top: 50%;
+	opacity: 0;
+	transform: translateY(-50%);
+	box-sizing: border-box;
+	transition: margin-top .35s ease-out, opacity .5s ease-out;
+}
+
+.project:hover .project-details-wrapper {
+	margin-top: 0px;
+	opacity: 1;
+}
+
+.project-title {
+	font-family: 'Arvo', sans-serif;
+	font-size: 35px;
 	color: #ECECEC;
 	margin: 0;
+	width: 100%;
+}
+
+.project-description {
+	font-family: 'Arvo', sans-serif;
+	color: #ECECEC;
 }
 
 #hackroulette {
-	background-image: url("../images/hackroulette.png");
-	background-size: contain;
+	background: url("../images/projects/hackroulette.jpg") no-repeat center center;
+	background-size: cover;
 }
 
-#hackroulette_title {
+#python-compiler {
+	background: url("../images/projects/python-compiler.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#noflix {
+	background: url("../images/projects/noflix.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+#infinitefilespace {
+	background: url("../images/projects/infinitefilespace.png") no-repeat center center;
+	background-size: cover;
+}
+
+#indoor-navigator {
+	background: url("../images/projects/indoor-navigator.jpg") no-repeat center center;
+	background-size: cover;
+}
+
+/*#hackroulette-title {
 	opacity: 0;
 	transition: 1s ease-in-out;
 }
 
-#hackroulette:hover > #hackroulette_title {
+#hackroulette:hover > #hackroulette-title {
 	opacity: 1;
-}
+}*/
 
 .clearfix:after { 
    content: "."; 
@@ -266,3 +359,6 @@ body {
    height: 0; 
    clear: both;
 }
+
+
+
