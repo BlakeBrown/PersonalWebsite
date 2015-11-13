@@ -27,7 +27,25 @@
 .black-overlay {
 	background-color: rgba(38,38,38,0.3);
 }
-
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+.light-red {
+	color: #FF9595
+}
+.extra-light-red {
+	color: #FFE2E8;
+}
+.yellow {
+	color: #FFCB68;;
+}
+.black {
+	color: #000;
+}
 /*  ============================= 
 	========= Main Site ========= 
 	=============================  */
@@ -352,12 +370,40 @@ body {
 	opacity: 1;
 }*/
 
-.clearfix:after { 
-   content: "."; 
-   visibility: hidden; 
-   display: block; 
-   height: 0; 
-   clear: both;
+/*  ============================= 
+	========= SECTION 2 ========= 
+	=============================  */
+
+#section-2 {
+	background-image: url("../images/stardust.png");
+	padding: 50px 0;
+	color: #fff;
+}
+
+#workplace-header {
+	font-family: 'Lobster', Georgia, Times, serif;
+	text-align: center;
+	color: #fff;
+	font-size: 59px;
+	margin: 0;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+}
+
+.workplace-wrapper {
+	font-family: 'Arvo';	
+}
+
+.work-title {
+	font-family: 'Arvo';
+}
+
+.work-description {
+	font-family: 'Arvo';
+}
+
+.work-img {
+	height: 50px;
 }
 
 
