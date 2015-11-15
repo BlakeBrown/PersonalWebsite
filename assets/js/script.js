@@ -9,6 +9,11 @@ $(window).load(function() {
 		}, 1000);
 	}, 1000);
 });
+$('#hackroulette').on('click', function() {
+	$('body').load('hackroulette-modal.html');
+});
+
+
 // $(window).scroll(function() {
 // 	console.log("hello");
 //      if($(window).scrollTop() > 0) {

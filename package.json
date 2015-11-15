@@ -1,0 +1,19 @@
+{
+  "name": "PersonalWebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlakeBrown/PersonalWebsite.git"
+  },
+  "author": "Blake Brown",
+  "bugs": {
+    "url": "https://github.com/BlakeBrown/PersonalWebsite/issues"
+  },
+  "homepage": "https://github.com/BlakeBrown/PersonalWebsite",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3"
+  }
+}

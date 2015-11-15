@@ -46,6 +46,49 @@
 .black {
 	color: #000;
 }
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.5);
+}
+.modal {
+	position: fixed;
+	width: 50vw;
+	background: #fff;
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: 4px;
+	left: 0;
+	right: 0;
+	top: 25%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+.close-modal {
+	position: absolute;
+    right: 10px;
+    color: #4E4E4E;
+}
+.close-modal:hover {
+	color: #000;
+	cursor: pointer;
+}
+.modal-title {
+	text-align: center;
+	font-family: 'Arvo', sans-serif;
+	font-size: 35px;
+	color: #696969;
+	margin: 0;
+	width: 100%;
+}
+.modal-description {
+	font-family: 'Arvo', sans-serif;
+	color: #888888;
+}
 /*  ============================= 
 	========= Main Site ========= 
 	=============================  */
