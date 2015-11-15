@@ -9,8 +9,31 @@ $(window).load(function() {
 		}, 1000);
 	}, 1000);
 });
+
+function removeModal() {
+	$('#overlay').remove();
+	$('.modal').addClass('fadeOut');
+};
+
 $('#hackroulette').on('click', function() {
-	$('body').load('hackroulette-modal.html');
+	// Load modal via ajax
+	$.ajax({
+		url: 'assets/modals/hackroulette-modal.html',
+		method: 'GET',
+		success: function(data) {
+			// Add modal to the DOM
+			$('body').before(data);
+			// Add event listener to close the modal
+			$('.close-modal').on('click', function() {
+				removeModal();
+			});
+			$('#overlay').on('click', function() {
+				removeModal();
+			});
+		}, error: function() {
+			alert('Something went wrong, please contact Blake.');
+		}
+	});
 });
 
 

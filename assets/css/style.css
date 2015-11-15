@@ -2,7 +2,6 @@
 	================== Helpers ====================
 	========= Commonly used CSS Classes  ==========
 	===============================================  */
-
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -46,6 +45,82 @@
 .black {
 	color: #000;
 }
+/*  ============================= 
+	===== Custom Animations ===== 
+	=============================  */
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+.slide-down-animation {
+  animation: slideInDown 2s forwards;
+}
+/*@keyframes grow {
+	from {
+		background: #ddd;
+		box-shadow: 0 0 50px gold,0 0 150px gold, inset 0 20px 20px 40px whitesmoke, inset 30px 0 35px 50px ivory;
+	}
+	100% {
+
+	}
+}
+*/
+@keyframes fade {
+	from {
+		opacity: 0;
+	} 
+	100% {
+		opacity: 1;
+	}
+}
+.fade-in-animation {
+	animation: fade 1s forwards;
+}
+.fade-out-animation {
+	/* Play the fade animation for 5s in reverse, "forwards" is the animation-fill-mode which will keep the opacity at 0 after it fades out*/
+	animation: fade 5s reverse forwards;
+}
+@keyframes grow {
+	from {
+		height:0px;
+		width:0px;
+	}
+	100% {
+		height:200px;
+		width:200px;
+	}
+}
+/*@keyframes blink {
+	from {
+		background: #ddd;
+		box-shadow: 0 0 50px gold,0 0 150px gold, inset 0 20px 20px 40px whitesmoke, inset 30px 0 35px 50px ivory;
+	}
+	100% {
+		background: #ddd;
+	}
+}*/
+@keyframes rotate {
+	from {
+		
+	}
+	100% {
+		transform:rotate(360deg);
+	}
+}
+.grow-animation {
+  animation-name: grow;
+  animation-duration: 1s;
+}
+/*  ============================= 
+	========== Modals ===========
+	=============================  */
 #overlay {
 	position: fixed;
 	top: 0;
@@ -60,10 +135,8 @@
 	width: 50vw;
 	background: #fff;
 	padding: 10px;
-	margin: 0 auto;
 	border-radius: 4px;
-	left: 0;
-	right: 0;
+	left: 50%;
 	top: 25%;
 	transform: translate(-50%, -50%);
 	z-index: 2;
@@ -92,7 +165,6 @@
 /*  ============================= 
 	========= Main Site ========= 
 	=============================  */
-
 #loader {
 	position:fixed;
 	height:100vh;
@@ -147,75 +219,6 @@
 }
 
 /*#loader:hover,#loader-circle:hover {background-color:#123;transition:1s;}*/
-
-
-/*@keyframes grow {
-	from {
-		background: #ddd;
-		box-shadow: 0 0 50px gold,0 0 150px gold, inset 0 20px 20px 40px whitesmoke, inset 30px 0 35px 50px ivory;
-	}
-	100% {
-
-	}
-}
-*/
-
-@keyframes fade {
-	from {
-		opacity: 0;
-	} 
-	100% {
-		opacity: 1;
-	}
-}
-
-.fade-in-animation {
-	animation: fade 1s forwards;
-}
-
-.fade-out-animation {
-	/* Play the fade animation for 5s in reverse, "forwards" is the animation-fill-mode which will keep the opacity at 0 after it fades out*/
-	animation: fade 5s reverse forwards;
-}
-
-@keyframes grow {
-	from {
-		height:0px;
-		width:0px;
-	}
-	100% {
-		height:200px;
-		width:200px;
-	}
-}
-
-/*@keyframes blink {
-	from {
-		background: #ddd;
-		box-shadow: 0 0 50px gold,0 0 150px gold, inset 0 20px 20px 40px whitesmoke, inset 30px 0 35px 50px ivory;
-	}
-	100% {
-		background: #ddd;
-	}
-}*/
-
-@keyframes rotate {
-	from {
-		
-	}
-	100% {
-		transform:rotate(360deg);
-	}
-}
-
-.grow-animation {
-  animation-name: grow;
-  animation-duration: 1s;
-}
-
-
-
-
 body {
 	margin: 0;
 }
@@ -230,7 +233,6 @@ body {
 	border-bottom: 4px solid #aaa;
 	height: 100vh;
 }
-
 #nav-bar {
 	position: fixed;
 	width: 100%;
@@ -238,11 +240,9 @@ body {
 	background-color: #ECECEC;
 	border-bottom: 4px solid #aaa;
 }
-
 #nav-bar > ul {
 	margin: 0;
 }
-
 .list-item {
 	display         : inline;
 	list-style-type : none;
@@ -251,7 +251,6 @@ body {
 	font-size       : 25px;
 	line-height     : 70px;
 }
-
 #welcome {
 	padding-top:70px;
 }
@@ -263,7 +262,6 @@ body {
 	color: #4E4E4E;
 	margin: 0;
 }
-
 #welcome-caption {
 	font-family: 'Lora', Helvetica, Arial, sans-serif;
 	font-size: 18px;
@@ -273,7 +271,6 @@ body {
 	line-height: 25px;
 	padding-bottom:20px;
 }
-
 #profile { 
 	background-image: url("../images/profile.jpg");
 	background-position: 70% 0;
@@ -284,28 +281,10 @@ body {
 	margin: 10px auto;
 	transition: 0.3s ease-in-out;
 }
-
 #profile:hover {
 	-webkit-filter: grayscale(50%);
 	box-shadow: inset 0 0 0 8px #9895EF;
 }
-
-@keyframes slideInDown {
-  from {
-    transform: translate3d(0, -100%, 0);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-.slide-down-animation {
-  animation: slideInDown 2s forwards;
-}
-
 /*  ============================= 
 	========= SECTION 1 ========= 
 	=============================  */
@@ -314,7 +293,6 @@ body {
 	text-align: center;
 	padding: 50px 0;
 }
-
 #projects-header {
 	font-family: 'Lobster', Georgia, Times, serif;
 	font-size: 59px;
@@ -322,12 +300,10 @@ body {
 	padding-bottom: 5px;
 	margin-bottom: 15px;
 }
-
 #projects-wrapper {
 	width: 80%;
 	margin: 0 auto;
 }
-
 .project {
 	background-color: #888;
 	border: 1px solid #eee;
@@ -336,19 +312,16 @@ body {
 	box-sizing: border-box;
 	float: left;
 }
-
 .black-overlay {
 	width: 100%;
 	height: 100%;
 	position: relative;
     transition: all 0.25s ease-out;
 }
-
 .project:hover > .black-overlay {
 	background: rgba(33,33,33,0.8);
 	cursor: pointer;
 }
-
 .project-details-wrapper {
 	width: 100%;
 	padding: 10px;
@@ -360,12 +333,10 @@ body {
 	box-sizing: border-box;
 	transition: margin-top .35s ease-out, opacity .5s ease-out;
 }
-
 .project:hover .project-details-wrapper {
 	margin-top: 0px;
 	opacity: 1;
 }
-
 .project-title {
 	font-family: 'Arvo', sans-serif;
 	font-size: 35px;
@@ -373,32 +344,26 @@ body {
 	margin: 0;
 	width: 100%;
 }
-
 .project-description {
 	font-family: 'Arvo', sans-serif;
 	color: #ECECEC;
 }
-
 #hackroulette {
 	background: url("../images/projects/hackroulette.jpg") no-repeat center center;
 	background-size: cover;
 }
-
 #python-compiler {
 	background: url("../images/projects/python-compiler.jpg") no-repeat center center;
 	background-size: cover;
 }
-
 #noflix {
 	background: url("../images/projects/noflix.jpg") no-repeat center center;
 	background-size: cover;
 }
-
 #infinitefilespace {
 	background: url("../images/projects/infinitefilespace.png") no-repeat center center;
 	background-size: cover;
 }
-
 #indoor-navigator {
 	background: url("../images/projects/indoor-navigator.jpg") no-repeat center center;
 	background-size: cover;
@@ -416,13 +381,11 @@ body {
 /*  ============================= 
 	========= SECTION 2 ========= 
 	=============================  */
-
 #section-2 {
 	background-image: url("../images/stardust.png");
 	padding: 50px 0;
 	color: #fff;
 }
-
 #workplace-header {
 	font-family: 'Lobster', Georgia, Times, serif;
 	text-align: center;
@@ -432,19 +395,15 @@ body {
 	padding-bottom: 5px;
 	margin-bottom: 15px;
 }
-
 .workplace-wrapper {
 	font-family: 'Arvo';	
 }
-
 .work-title {
 	font-family: 'Arvo';
 }
-
 .work-description {
 	font-family: 'Arvo';
 }
-
 .work-img {
 	height: 50px;
 }
