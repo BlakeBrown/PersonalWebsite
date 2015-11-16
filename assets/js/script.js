@@ -12,8 +12,13 @@ $(window).load(function() {
 
 function removeModal() {
 	$('#overlay').remove();
-	$('.modal').addClass('fadeOut');
+	$('.modal').removeClass('fadeIn');
+	$('.modal').addClass('bounceOut');
 };
+
+$('.close-modal').on('click', function() {
+	removeModal();
+});
 
 $('#hackroulette').on('click', function() {
 	// Load modal via ajax
@@ -23,7 +28,10 @@ $('#hackroulette').on('click', function() {
 		success: function(data) {
 			// Add modal to the DOM
 			$('body').before(data);
-			// Add event listener to close the modal
+			// Add event listeners
+			$('.modal-button-website').on('click', function() {
+				window.location.href = 'https://github.com/BlakeBrown/hackroulette';
+			});
 			$('.close-modal').on('click', function() {
 				removeModal();
 			});
