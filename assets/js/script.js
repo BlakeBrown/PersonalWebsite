@@ -6,6 +6,8 @@ $(window).load(function() {
 		$("#welcome").addClass("slide-down-animation");
 		setTimeout(function() {
 			$("#brown").addClass("fade-in-animation");
+			$("#profile-picture").addClass("animated flipInX");
+			$("#profile-picture").css('opacity', 1);
 		}, 1000);
 	}, 1000);
 });
