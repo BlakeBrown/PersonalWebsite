@@ -6,7 +6,6 @@ $(window).load(function() {
 		$("#welcome").addClass("slide-down-animation");
 		setTimeout(function() {
 			$("#brown").addClass("fade-in-animation");
-			$(".profile-button").addClass("fade-in-animation");
 		}, 1000);
 	}, 1000);
 });
@@ -15,6 +14,9 @@ function removeModal() {
 	$('#overlay').remove();
 	$('.modal').removeClass('fadeIn');
 	$('.modal').addClass('bounceOut');
+	setTimeout(function() {
+		$('.modal').remove();
+	}, 750);
 };
 
 $('.close-modal').on('click', function() {
