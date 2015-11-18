@@ -1,11 +1,11 @@
 // $(window).load is fired after all content (including images) have been loaded
 $(window).load(function() {
 	// Home screen animation, fades in background + name + sections
-	$("#section-0").addClass("fade-in-animation");
+	$('#section-0').addClass('fade-in-animation');
 	setTimeout(function() {
-		$("#welcome").addClass("slide-down-animation");
+		$('#welcome').addClass('slide-down-animation');
 		setTimeout(function() {
-			$("#brown").addClass("fade-in-animation");
+			$('#brown').addClass('fade-in-animation');
 		}, 1000);
 	}, 1000);
 });
@@ -21,6 +21,49 @@ function removeModal() {
 
 $('.close-modal').on('click', function() {
 	removeModal();
+});
+
+function switchModalImage(direction) {
+	var thumbnailName = $('.modal-thumbnail').attr('id');
+	var thumbnailId = $('.modal-thumbnail').data('thumbnail-id');
+	var thumbnailListSize = $('.modal-thumbnail').data('thumbnail-list-size');
+	$('.modal-thumbnail').removeClass(thumbnailName + '-' + thumbnailId);
+	if(direction == 'right') {	
+		if(thumbnailId < thumbnailListSize) {
+			thumbnailId++;
+		} else {
+			thumbnailId = 1;
+		}
+	} else {
+		if(thumbnailId > 1) {
+			thumbnailId--;
+		} else {
+			thumbnailId = thumbnailListSize;
+		}
+	}
+	$('.modal-thumbnail').addClass(thumbnailName + '-' + thumbnailId);
+	$('.modal-image-control').removeClass('modal-image-control-selected');
+	$('.modal-image-control[data-modal-control="' + thumbnailId + '"]').addClass('modal-image-control-selected');
+	$('.modal-thumbnail').data('thumbnail-id', thumbnailId);
+};
+
+$('.modal-image-control').on('click', function() {
+	var thumbnailName = $('.modal-thumbnail').attr('id');
+	var thumbnailId = $('.modal-thumbnail').data('thumbnail-id');
+	var newThumbnailId = $(this).data('modal-control');
+	$('.modal-thumbnail').removeClass(thumbnailName + '-' + thumbnailId);
+	$('.modal-thumbnail').addClass(thumbnailName + '-' + newThumbnailId);
+	$('.modal-image-control').removeClass('modal-image-control-selected');
+	$('.modal-image-control[data-modal-control="' + newThumbnailId + '"]').addClass('modal-image-control-selected');
+	$('.modal-thumbnail').data('thumbnail-id', newThumbnailId);
+});
+
+$('.modal-image-arrow-left').on('click', function() {
+	switchModalImage('left');
+});
+
+$('.modal-image-arrow-right').on('click', function() {
+	switchModalImage('right');
 });
 
 $('#hackroulette').on('click', function() {
@@ -49,7 +92,7 @@ $('#hackroulette').on('click', function() {
 
 
 // $(window).scroll(function() {
-// 	console.log("hello");
+// 	console.log('hello');
 //      if($(window).scrollTop() > 0) {
 //          // headerOff();
 //      } else {
