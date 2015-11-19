@@ -134,7 +134,7 @@
 }
 .modal {
 	position: fixed;
-	width: 50vw;
+	width: 60vw;
 	background: #fff;
 	padding: 15px 30px;
 	margin: 0 auto;
@@ -142,7 +142,7 @@
 	border-radius: 4px;
 	left: 0;
 	right: 0;
-	top: 25%;
+	top: 10vh;
 	z-index: 2;
 }
 .close-modal {
@@ -470,6 +470,30 @@ body {
 	}
 	.welcome {
 		font-size: 70px;
+	}
+}
+@media screen and (max-height: 700px) {
+	.modal-title {
+		font-size: 5vh;
+	}
+	.modal-description {
+		font-size: 2.5vh;
+	}
+	.modal-image-arrow-left {
+		left: -4vh;
+	}
+	.modal-image-arrow-right {
+		right: -4vh;
+	}
+	#python-compiler-thumbnail {
+		width: 40vw;
+		height: 40vh;
+	}
+	.modal-button {
+		font-size: 2.5vh;
+	}
+	.modal-footer {
+		margin-top: 2.7vh;
 	}
 }
 /*  ============================= 
