@@ -102,3 +102,35 @@ $('#python-compiler').on('click', function() {
 		}
 	});
 });
+
+$('#noflix').on('click', function() {
+	// Load modal via ajax
+	$.ajax({
+		url: 'assets/modals/noflix-modal.html',
+		method: 'GET',
+		success: function(data) {
+			// Add modal to the DOM
+			$('body').before(data);
+			// Add event listeners
+			addEventListeners();
+		}, error: function() {
+			alert('Something went wrong, please contact Blake.');
+		}
+	});
+});
+
+$('#infinitefilespace').on('click', function() {
+	// Load modal via ajax
+	$.ajax({
+		url: 'assets/modals/filespace-modal.html',
+		method: 'GET',
+		success: function(data) {
+			// Add modal to the DOM
+			$('body').before(data);
+			// Add event listeners
+			addEventListeners();
+		}, error: function() {
+			alert('Something went wrong, please contact Blake.');
+		}
+	});
+});

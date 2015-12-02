@@ -194,16 +194,25 @@
 	position: absolute;
 	height: 300px;
 	width: 50vw;
+	left: 0;
+	right: 0;
 	margin: 0 auto;
 	border-radius: 10px;
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
+}
+.modal-thumbnail-tall {
+	height: 30vh;
+    width: 20vw;
 }
 .modal-thumbnail-wrapper {
 	position: relative;
 	height: 300px;
 	width: 50vw;
 	margin: 0 auto;
+}
+.modal-thumbnail-wrapper-tall {
+	height: 30vh;
 }
 .modal-image-arrow {
 	position: absolute;
@@ -267,6 +276,30 @@
 	background: url("../images/projects/python-compiler-thumb4.png") no-repeat;
 	background-size: cover;
 }
+.noflix-thumbnail-1 {
+	background: url("../images/projects/noflix-thumb1.png") no-repeat;
+	background-size: cover;
+}
+.noflix-thumbnail-2 {
+	background: url("../images/projects/noflix-thumb2.jpeg") no-repeat;
+	background-size: cover;
+	width: 50vw;
+}
+.filespace-thumbnail-1 {
+	background: url("../images/projects/filespace-thumb1.png") no-repeat;
+	background-size: cover;
+	border: 1px solid #CACACA;
+}
+.filespace-thumbnail-2 {
+	background: url("../images/projects/filespace-thumb2.png") no-repeat;
+	background-size: cover;
+	border: 1px solid #CACACA;
+}
+.filespace-thumbnail-3 {
+	background: url("../images/projects/filespace-thumb3.png") no-repeat;
+	background-size: cover;
+	border: 1px solid #CACACA;
+}
 .modal-footer {
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -304,6 +337,15 @@
 }
 .modal-button-website:hover {
 	background: #2a8a85;
+}
+.modal-button-app-store {
+	color: #f4f4f4;
+	background: #f47e7e;
+	border: solid 0 #e3edf4;
+	border-bottom: 2px solid #e76969;
+}
+.modal-button-app-store:hover {
+	background: #e05d5d;
 }
 /*  ============================= 
 	========= Main Site ========= 
@@ -396,7 +438,7 @@ body {
 #welcome {
 	padding-top: 20px;
 }
-.welcome {
+.site-header {
 	font-family: 'Playfair Display', serif;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -530,10 +572,22 @@ body {
 	}
 }
 /*  ============================= 
+	========= SECTION 3 ========= 
+	=============================  */
+#section-3 {
+	background-image: url("../images/grey-wash-wall.png");
+	padding: 50px 0;
+	color: #fff;
+	text-align: center;
+}
+
+
+/*  ============================= 
 	========= SECTION 1 ========= 
 	=============================  */
 #section-1 {
-	background-image: url("../images/ice-age.png");
+	background-image: url("../images/mountain.jpg");
+	background-size: cover;
 	text-align: center;
 	padding: 50px 0;
 }
@@ -545,16 +599,16 @@ body {
 	margin-bottom: 15px;
 }
 #projects-wrapper {
-	width: 80%;
-	margin: 0 auto;
+	text-align: center;
 }
 .project {
+	display: inline-block;
 	background-color: #888;
-	border: 1px solid #eee;
 	height: 300px;
-	width: 33.3333%;
+	width: 300px;
 	box-sizing: border-box;
-	float: left;
+	border: 1px solid #eee;
+	margin: 10px;
 }
 .black-overlay {
 	width: 100%;
