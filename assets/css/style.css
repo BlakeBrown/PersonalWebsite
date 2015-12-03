@@ -575,10 +575,22 @@ body {
 	========= SECTION 3 ========= 
 	=============================  */
 #section-3 {
-	background-image: url("../images/grey-wash-wall.png");
+	background-image: url("../images/ice-age.png");
 	padding: 50px 0;
 	color: #fff;
 	text-align: center;
+}
+#intro-header {
+	font-family: 'Arvo', 'Helvetica', sans-serif;
+	font-size: 80px;
+	font-weight: normal;
+	color: #353535;
+	margin: 0;
+}
+#intro-description {
+	font-family: 'PT Sans', 'Helvetica', sans-serif;
+	font-size: 18px;
+	color: #353535;
 }
 
 
@@ -593,7 +605,7 @@ body {
 }
 #projects-header {
 	font-family: 'Lobster', Georgia, Times, serif;
-	font-size: 59px;
+	font-size: 70px;
 	margin: 0;
 	padding-bottom: 5px;
 	margin-bottom: 15px;
