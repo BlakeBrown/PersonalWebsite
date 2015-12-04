@@ -13,12 +13,21 @@ $(window).load(function() {
 	var date = new Date();
 	var localHour = date.getHours();
 	if(localHour >= 0 && localHour <= 5) {
-		$('#intro-header').text('Bonne nuit!');
+		$('#intro-header').text('Bonne Nuit!');
 	} else if(localHour >= 6 && localHour <= 10) {
-		$('#intro-header').text('Bon matin!');
+		$('#intro-header').text('Bon Matin!');
 	} else if(localHour >= 19 && localHour <= 23) {
 		$('#intro-header').text('Bonsoir!');
 	} 
+
+	// Fade out section-0 on window scroll
+	$(window).scroll(function () {
+	    var scrollTop = $(window).scrollTop();
+	    var height = $(window).height();
+	    $('#section-0').css({
+	        'opacity': ((height - scrollTop) / height)
+	    }); 
+	});
 
 });
 

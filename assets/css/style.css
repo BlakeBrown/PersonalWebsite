@@ -423,6 +423,7 @@ body {
 	text-align: center;
 	background-color: #ECECEC;
 	border-bottom: 4px solid #aaa;
+	z-index: 1;
 }
 #nav-bar > ul {
 	margin: 0;
@@ -577,22 +578,35 @@ body {
 #section-3 {
 	background-image: url("../images/ice-age.png");
 	padding: 50px 0;
-	color: #fff;
 	text-align: center;
+	color: #353535;
 }
 #intro-header {
 	font-family: 'Arvo', 'Helvetica', sans-serif;
 	font-size: 80px;
 	font-weight: normal;
-	color: #353535;
 	margin: 0;
 }
-#intro-description {
+.intro-description {
 	font-family: 'PT Sans', 'Helvetica', sans-serif;
 	font-size: 18px;
-	color: #353535;
 }
-
+#skills-header {
+	font-family: 'Lobster', Georgia, Times, serif;
+	font-size: 70px;
+	margin: 0;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+}
+.skill {
+	list-style-type: none;
+	display: inline-block;
+	border: 1px solid #eee;
+	padding: 4px;
+	border-radius: 7px;
+	background-color: #8FD187;
+	font-family: 'Varela Round', sans-serif;
+}
 
 /*  ============================= 
 	========= SECTION 1 ========= 
