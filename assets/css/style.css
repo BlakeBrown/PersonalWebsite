@@ -347,6 +347,34 @@
 .modal-button-app-store:hover {
 	background: #e05d5d;
 }
+/* Responsive styles */
+@media screen and (max-height: 900px) {
+	.modal {
+		top: 10vh;
+	}
+}
+@media screen and (max-height: 750px) {
+	.modal {
+		top: 5vh;
+	}
+}
+@media screen and (max-height: 700px) {
+	.modal {
+		top: 2.5vh;
+	}
+	.modal-description {
+		font-size: 16px;
+	}
+	.modal-thumbnail-wrapper {
+		height: 270px;
+	}
+	.modal-thumbnail {
+		height: 270px;
+	}
+	.modal-button {
+		font-size: 18px;
+	}
+}
 /*  ============================= 
 	========= Main Site ========= 
 	=============================  */
@@ -571,33 +599,9 @@ body {
 	}
 }
 /* We don't want to support any smaller screens, use a fixed height*/
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 600px) {
 	#section-0 {
-		height: 650px;
-	}
-}
-@media screen and (max-height: 700px) {
-	.modal-title {
-		font-size: 5vh;
-	}
-	.modal-description {
-		font-size: 2.5vh;
-	}
-	.modal-image-arrow-left {
-		left: -4vh;
-	}
-	.modal-image-arrow-right {
-		right: -4vh;
-	}
-	#python-compiler-thumbnail {
-		width: 40vw;
-		height: 40vh;
-	}
-	.modal-button {
-		font-size: 2.5vh;
-	}
-	.modal-footer {
-		margin-top: 2.7vh;
+		height: 600px;
 	}
 }
 /*  ============================= 
