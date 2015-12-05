@@ -494,7 +494,6 @@ body {
 	#profile-picture {
 		height: 350px;
 		width: 350px;
-		border-radius: 50%;
 	}
 	.profile-button {
 		margin-top: 40px;
@@ -505,15 +504,15 @@ body {
 		font-size: 30px;
 		height: 130px;
 	}
-	.welcome {
+	.site-header {
 		font-size: 120px;
 	}
 }
 @media screen and (max-height: 950px) {
 	#profile-picture {
-		height: 300px;
-		width: 300px;
-		border-radius: 50%;
+		height: 320px;
+		width: 320px;
+		background-position: 0px -68px;
 	}
 	.profile-button {
 		margin-top: 35px;
@@ -524,28 +523,57 @@ body {
 		font-size: 24px;
 		height: 110px;
 	}
-	.welcome {
-		font-size: 90px;
+	.site-header {
+		font-size: 100px;
 	}
 }
-@media screen and (max-height: 790px) {
+@media screen and (max-height: 820px) {
 	#profile-picture {
-		height: 250px;
-		width: 250px;
-		border-radius: 50%;
-		background-position: 0px -52px;
+		height: 310px;
+		width: 310px;
+		background-position: 0px -55px;
 	}
 	.profile-button {
-		margin-top: 25px;
+		margin-top: 0;
 	}
 	.profile-button-icon {
-		line-height: 90px;
-		width: 90px;
-		font-size: 20px;
-		height: 90px;
+	    line-height: 100px;
+	    width: 100px;
+	    font-size: 24px;
+	    height: 100px;
 	}
-	.welcome {
-		font-size: 70px;
+	.site-header {
+	    font-size: 100px;
+	    line-height: 120px;
+	}
+}
+@media screen and (max-height: 720px) {
+	#welcome {
+		padding-top: 0;
+	}
+	#profile-picture {
+		height: 270px;
+		width: 270px;
+		background-position: 0px -47px;
+	}
+	.profile-button {
+		margin-top: 10px;
+	}
+	.profile-button-icon {
+	    line-height: 90px;
+	    width: 90px;
+	    font-size: 24px;
+	    height: 90px;
+	}
+	.site-header {
+	    font-size: 90px;
+	    line-height: 100px;
+	}
+}
+/* We don't want to support any smaller screens, use a fixed height*/
+@media screen and (max-height: 650px) {
+	#section-0 {
+		height: 650px;
 	}
 }
 @media screen and (max-height: 700px) {
