@@ -365,6 +365,16 @@
 	.modal-description {
 		font-size: 16px;
 	}
+	#hackroulette-modal-description {
+		font-size: 15px;
+	}
+	#noflix-modal-description {
+		font-size: 15px;
+	}
+	.noflix-thumbnail-1 {
+		height: 250px;
+		width: 400px;
+	}
 	.modal-thumbnail-wrapper {
 		height: 270px;
 	}
