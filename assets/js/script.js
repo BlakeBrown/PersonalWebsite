@@ -9,16 +9,16 @@ $(window).load(function() {
 		}, 1000);
 	}, 1000);
 
-	// Change the text
-	var date = new Date();
-	var localHour = date.getHours();
-	if(localHour >= 0 && localHour <= 5) {
-		$('#intro-header').text('Bonne Nuit!');
-	} else if(localHour >= 6 && localHour <= 10) {
-		$('#intro-header').text('Bon Matin!');
-	} else if(localHour >= 19 && localHour <= 23) {
-		$('#intro-header').text('Bonsoir!');
-	} 
+	// // Change the text
+	// var date = new Date();
+	// var localHour = date.getHours();
+	// if(localHour >= 0 && localHour <= 5) {
+	// 	$('#intro-header').text('Bonne Nuit!');
+	// } else if(localHour >= 6 && localHour <= 10) {
+	// 	$('#intro-header').text('Bon Matin!');
+	// } else if(localHour >= 19 && localHour <= 23) {
+	// 	$('#intro-header').text('Bonsoir!');
+	// } 
 
 	// Fade out section-0 on window scroll
 	$(window).scroll(function () {

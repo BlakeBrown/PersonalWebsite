@@ -45,6 +45,9 @@
 .black {
 	color: #000;
 }
+.green {
+	color: #8FD187;
+}
 .opaque {
 	opacity: 1 !important;
 }
@@ -452,7 +455,6 @@ body {
 	background: url(../images/san-fran.jpg) no-repeat center center; 
 	background-size: cover;
 	text-align: center;
-	border-bottom: 4px solid #aaa;
 	height: 100vh;
 }
 #nav-bar {
@@ -618,10 +620,10 @@ body {
 	========= SECTION 3 ========= 
 	=============================  */
 #section-3 {
-	background-image: url("../images/ice-age.png");
+	background-image: url("../images/footer_lodyas.png");
 	padding: 50px 0;
 	text-align: center;
-	color: #353535;
+	color: #fff;
 }
 #intro-header {
 	font-family: 'Arvo', 'Helvetica', sans-serif;
