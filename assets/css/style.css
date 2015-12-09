@@ -595,6 +595,7 @@ body {
 		height: 270px;
 		width: 270px;
 		background-position: 0px -47px;
+		box-shadow: inset 0 0 0 6px #484848;
 	}
 	.profile-button {
 		margin-top: 10px;
@@ -626,14 +627,15 @@ body {
 	color: #fff;
 }
 #intro-header {
-	font-family: 'Arvo', 'Helvetica', sans-serif;
+	font-family: 'Lato', 'Helvetica', sans-serif;
 	font-size: 80px;
-	font-weight: normal;
+	font-weight: 300;
 	margin: 0;
 }
 .intro-description {
-	font-family: 'PT Sans', 'Helvetica', sans-serif;
+	font-family: 'Lato', 'Helvetica', sans-serif;
 	font-size: 18px;
+	font-weight: 300;
 }
 #skills-header {
 	font-family: 'Lobster', Georgia, Times, serif;
