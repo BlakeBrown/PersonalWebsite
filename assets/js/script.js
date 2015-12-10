@@ -1,7 +1,7 @@
 // $(window).load is fired after all content (including images) have been loaded
 $(window).load(function() {
 	// Home screen animation, fades in background + name + sections
-	$('#section-0').addClass('fadeIn');
+	$('body').addClass('fadeIn');
 	setTimeout(function() {
 		$('#welcome').addClass('slide-down-animation');
 		setTimeout(function() {
@@ -20,13 +20,13 @@ $(window).load(function() {
 	// 	$('#intro-header').text('Bonsoir!');
 	// } 
 
-	$.firefly({
-		color: '#fff',
-		minPixel: 1,
-		maxPixel: 3,
-		total : 50,
-		on: 'section-0'
-	});
+	// $.firefly({
+	// 	color: '#fff',
+	// 	minPixel: 1,
+	// 	maxPixel: 3,
+	// 	total : 50,
+	// 	on: 'section-0'
+	// });
 
 
 	// Fade out section-0 on window scroll
