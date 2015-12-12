@@ -79,6 +79,35 @@ body {
 /*  ============================= 
 	======== Animations ========= 
 	=============================  */
+.typed-cursor {
+	font-family: 'Lato', 'Helvetica', sans-serif;
+	font-size: 80px;
+    font-weight: 300;
+    opacity: 1;
+    -webkit-animation: blink 1.2s infinite;
+    -moz-animation: blink 1.2s infinite;
+    animation: blink 1.2s infinite;
+}
+.animation-blink-out {
+	-webkit-animation: blink 5s forwards;
+	-moz-animation: blink 5s forwards;
+	animation: blink 5s forwards;
+}
+@keyframes blink{
+    0% { opacity:0; }
+    50% { opacity:1; }
+    100% { opacity:0; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:0; }
+	50% { opacity:1; }
+	100% { opacity:0; }
+}
+@-moz-keyframes blink{
+	0% { opacity:0; }
+	50% { opacity:1; }
+	100% { opacity:0; }
+}
 .animated-fast {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
@@ -470,6 +499,7 @@ body {
 	background: url(../images/stars.jpg) no-repeat center center; 
 	background-size: cover;
 	background-color: #000;
+	position: relative;
 	text-align: center;
 	height: 100vh;
 }
@@ -530,8 +560,6 @@ body {
 	width: 100%;
 	position: absolute;
 	bottom: 5vh;
-	left: 50%;
-	transform: translate(-50%, 0);
 }
 .profile-button {
 	display: inline-block;
@@ -547,7 +575,7 @@ body {
 	font-size: 36px;
 	height: 4em;
 	text-align: center;
-	margin-right: 50px;
+	margin: 0 50px;
 	transition: .3s ease-out;
 }
 .profile-button-icon:hover {
@@ -644,10 +672,9 @@ body {
 	}
 }
 /*  ============================= 
-	========= SECTION 3 ========= 
+	========= SECTION 1 ========= 
 	=============================  */
-#section-3 {
-	background-image: url("../images/footer_lodyas.png");
+#section-1 {
 	padding: 50px 0;
 	text-align: center;
 	color: #fff;
@@ -656,12 +683,22 @@ body {
 	font-family: 'Lato', 'Helvetica', sans-serif;
 	font-size: 80px;
 	font-weight: 300;
+	display: inline-block;
+	height: 96px;
 	margin: 0;
 }
 .intro-description {
 	font-family: 'Lato', 'Helvetica', sans-serif;
 	font-size: 18px;
 	font-weight: 300;
+}
+/*  ============================= 
+	========= SECTION 2 ========= 
+	=============================  */
+#section-2 {
+	padding: 50px 0;
+	text-align: center;
+	color: #fff;
 }
 #skills-header {
 	font-family: 'Lobster', Georgia, Times, serif;
@@ -681,9 +718,9 @@ body {
 }
 
 /*  ============================= 
-	========= SECTION 1 ========= 
+	========= SECTION 3 ========= 
 	=============================  */
-#section-1 {
+#section-3 {
 	background-image: url("../images/mountain.jpg");
 	background-size: cover;
 	text-align: center;
@@ -775,9 +812,9 @@ body {
 }*/
 
 /*  ============================= 
-	========= SECTION 2 ========= 
+	========= SECTION 4 ========= 
 	=============================  */
-#section-2 {
+#section-4 {
 	background-image: url("../images/stardust.png");
 	padding: 50px 0;
 	color: #fff;
