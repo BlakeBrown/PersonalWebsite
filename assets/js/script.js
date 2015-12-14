@@ -6,6 +6,9 @@ $(window).load(function() {
 		$('#welcome').addClass('slide-down-animation');
 		setTimeout(function() {
 			$('#brown').addClass('fade-in-animation');
+			setTimeout(function() {
+				// $.firefly();
+			}, 1000);
 		}, 1000);
 	}, 1000);
 
@@ -20,13 +23,7 @@ $(window).load(function() {
 	// 	$('#intro-header').text('Bonsoir!');
 	// } 
 
-	$.firefly({
-		color: '#fff',
-		minPixel: 1,
-		maxPixel: 3,
-		total : 50,
-		on: 'section-0'
-	});
+	
 
 	var seenIntroHeader = false;
 
@@ -41,12 +38,11 @@ $(window).load(function() {
 	    	if(isScrolledIntoView('#intro-header')) {
 				seenIntroHeader = true;
 				$("#intro-header").addClass('fadeInUp');
+		    	$("#intro-header").typed({
+		    	    strings: ["Hello World"],
+		    	    typeSpeed: 100
+		    	});
 	    	}
-	    	// $("#intro-header").typed({
-	    	//     strings: ["Hello World"],
-	    	//     typeSpeed: 50,
-	    	//     startDelay: 1000
-	    	// });
 	    }
 	});
 

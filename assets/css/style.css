@@ -79,6 +79,11 @@ body {
 /*  ============================= 
 	======== Animations ========= 
 	=============================  */
+.firefly {
+	position: absolute;
+	pointer-events: none;
+	z-index: 2;
+}
 .typed-cursor {
 	font-family: 'Lato', 'Helvetica', sans-serif;
 	font-size: 80px;
@@ -648,6 +653,7 @@ body {
 	#profile-picture {
 		height: 300px;
 		width: 300px;
+		top: 58%;
 		background-position: 0px -47px;
 		box-shadow: inset 0 0 0 2px #484848;
 	}
@@ -663,6 +669,13 @@ body {
 	.site-header {
 	    font-size: 90px;
 	    line-height: 100px;
+	}
+}
+/* We don't want to support any smaller screens, use a fixed height*/
+@media screen and (max-height: 630px) {
+	#profile-picture {
+		height: 270px;
+		width: 270px;
 	}
 }
 /* We don't want to support any smaller screens, use a fixed height*/

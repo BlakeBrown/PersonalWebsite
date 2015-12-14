@@ -15,7 +15,7 @@
 			'http://dharmmotyar.googlecode.com/svn/trunk/images//spark2.png',
 			'http://dharmmotyar.googlecode.com/svn/trunk/images/spark3.png',
 			'http://dharmmotyar.googlecode.com/svn/trunk/images/spark4.png'],
-		total : 40
+		total : 50
 	};
 	
 	$.firefly = function(settings) {
@@ -30,22 +30,18 @@
 	
 	/* Public Functions */
 	$.firefly.create = function(img){
-		spark = $('<img>').attr({'src' : img}).hide();
+		spark = $('<img class="firefly animated fadeIn">').attr({'src' : img}).hide();
 		$(document.body).append(spark);
 			return spark.css({
-				'position':'absolute',
-				'z-index': $.firefly.random(20),
-				'pointer-events': 'none',
 				top: $.firefly.random(($(window).height()-150)),	//offsets
-				left: $.firefly.random(($(window).width()-150))		//offsets
+				left: $.firefly.random(($(window).width()-150))	//offsets
 				}).show();
 }
 
 $.firefly.fly = function(sp) {
 	$(sp).animate({
 		top: $.firefly.random(($(window).height()-150)),	//offsets
-		left: $.firefly.random(($(window).width()-150)),
-		opacity: $.firefly.opacity() 		
+		left: $.firefly.random(($(window).width()-150))	
 	}, (($.firefly.random(10) + 5) * 1100),function(){ $.firefly.fly(sp) } );
 };
 
@@ -59,14 +55,6 @@ $.firefly.preloadImages = function() {
 
 $.firefly.random = function(max) {
 	return Math.ceil(Math.random() * max) - 1;
-}
-$.firefly.opacity = function()
-{
-	op = Math.random();
-	if(op < .2)
-		return 0;
-	else
-		return 1;
 }
 
 })(jQuery);
