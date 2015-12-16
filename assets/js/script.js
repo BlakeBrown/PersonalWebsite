@@ -60,6 +60,23 @@ $(window).load(function() {
 
 	    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 	}
+
+	$('button').on('click', function() {
+		$(this).addClass('cbutton--click');
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 
 
