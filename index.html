@@ -12,6 +12,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Kalam:300,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/libraries/animate-css/animate.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -44,11 +47,19 @@
 	</article>
 	<article id="section-1">
 		<div class="container" style="border-bottom: 2px solid #CACACA">
-			<span id="intro-header"><span class="typed-cursor">|</span></span> 
-			<p id="intro-description" class="intro-description">Life can be much broader once you discover one simple fact: Everything around you that you call life was made up by people that were no smarter than you - and you can change it, you can influence it, you can build your own things that other people can use. 
-				<br>
-				<br>
+			<span id="intro-header">Hello World</span> 
+			<p id="intro-description" class="intro-description">Welcome to my website! My name is Blake Brown and I am an engineering student, full stack web developer and aspiring entrepreneur. My goal in life is simple; I want to help advance society using my immense passion for science and technology. 
+			<br>
+			<br>
+			As an innovator, I am always trying to improve quality of life and I have a tremendous amount of dedication for everything that I do. In the past year I’ve placed within the top 10% of my class, achieved the highest possible assessment on two consecutive co-op terms and become an academic class representative while starting an intramural soccer team. I am always trying to become a better version of myself and I love helping others achieve their goals just as much as I do working towards my own ambitions and dreams. 
+			<br>
+			<br>
+			In my free time, I also have a huge passion for the plethora of exciting activities this world has to offer and I absolutely love wakeboarding, rollerblading and unicycling/juggling.
+			<br>
+			<br>
+			I hope you learn something new about me and enjoy your stay, bon voyage! 
 				<i>Once you learn that, you'll never be the same again.</i>
+				<br>
 			</p>
 		</div>
 	</article>
@@ -56,18 +67,37 @@
 		<div class="container">
 			<h3 id="skills-header">Skills</h3>
 			<ul id="skills-list">
-				<li class="skill">HTML</li>
-				<li class="skill">CSS</li>
-				<li class="skill">Javascript</li>
-				<li class="skill">jQuery</li>
-				<li class="skill">AngularJS</li>
+				<li class="skill skill-selected" data-skill="skill-html">HTML</li>
+				<li class="skill" data-skill="skill-css">CSS</li>
+				<li class="skill" data-skill="skill-javascript">Javascript</li>
+				<li class="skill" data-skill="skill-jquery">jQuery</li>
+				<li class="skill" data-skill="skill-angular">AngularJS</li>
+				<li class="skill" data-skill="skill-angular">PHP + Laravel</li>
+				<li class="skill" data-skill="skill-angular">Node.js + Express</li>
+				<li class="skill" data-skill="skill-angular">SQL</li>
+				<li class="skill" data-skill="skill-c#">Python</li>
+				<li class="skill" data-skill="skill-c">C</li>
+				<li class="skill" data-skill="skill-c++">C++</li>
+				<li class="skill" data-skill="skill-c#">C#</li>
+				<li class="skill" data-skill="skill-android">Java (Android)</li>
+				<li class="skill" data-skill="skill-ios">Swift & Objective C (iOS)</li>
 			</ul>
 			<div class="skill-description-wrapper">
-				<p class="skill-description">I have a lot of experience with Javascript, both through my own side projects as well as professional industry experience at my two most recent co-op jobs.</p>
-				<h4 class="coop-heading">Two Co-op Jobs <i class="fa fa-chevron-down" style="color:#8FD187"></i></h4>
-				<ul class="coop-list">
+				<p class="skill-description">
+				HTML - my favourite markup language! While I think it's important to write clean, semantic markup, my favourite part of HTML actually comes from the HTML5 specification for javascript API's. There are some wicked cool applications you can build with powerful tools like media capture, WebSockets, local/session storage, etc. and I love incorporating these features into my side projects.
+				</p>
+				<div class="skill-list-wrapper">
+				<h4 class="no-margin">Two Co-op Jobs <i id="skill-toggle-jobs-list" class="skill-toggle-list fa fa-chevron-down no-select"></i></h4>
+				<ul id="skill-jobs-list">
 					<li>Ticketfi</li>
 					<li>Genesys</li>
+				</ul>
+				</div>
+				<h4 class="no-margin">Three Side Projects <i id="skill-toggle-projects-list" class="skill-toggle-list fa fa-chevron-down no-select"></i></h4>
+				<ul id="skill-projects-list">
+					<li>Hackroulette</li>
+					<li>Python Compiler</li>
+					<li>Filespace</li>
 				</ul>
 			</div>
 		</div>
@@ -123,61 +153,69 @@
 	<article id="section-4">
 		<div class="container">
 			<h1 id="workplace-header">Work Experience</h1>
-			<div id="genesys" class="workplace">
-				<div class="workplace-wrapper">
+			<div class="workplace">
+				<div class="work-header">
 					<h1 class="work-title"><span class="light-red">Genesys Labratories</span> - <span class="extra-light-red">Front End Developer</span></h1>
-					<h3>
-						<!-- Co-op Evaluation: Outstanding 
+					<h3 class="work-evaluation">
+						Co-op Evaluation: Outstanding 
 						<i class="fa fa-star yellow"></i> 
 						<i class="fa fa-star yellow"></i>
 						<i class="fa fa-star yellow"></i>
 						<i class="fa fa-star yellow"></i>
-						<i class="fa fa-star yellow"></i> -->
+						<i class="fa fa-star yellow"></i>
 					</h3>
-					<p class="work-description">Worked on Designer, a very recent Genesys cloud product</p>
-					<ul>
-						<li>Optimized the efficiency of AngularJS front end by nearly ~90% using virtual scrolling and removing unecessary Angular watchers</li>
-						<li>Improved capabilities of Node.js backend by using child processes in order to take advantage of multiple cores/CPUs</li>
-						<li>Worked on several large application features including autocomplete search, copy-paste, commenting, etc.</li>
-					</ul>
 				</div>
-				<div class="workplace-wrapper">
+				<p class="work-description">Worked on Designer, a one-year old Genesys cloud product that provides innovative customer support software for corporate companies</p>
+				<ul class="work-achievements">
+					<li>Optimized AngularJS frontend, improving performance by over 90% using techniques such as analyzing watchers, implementing virtual scrolling and writing custom directives to replace </li>
+					<li>Improved capabilities of Node.js backend by using child processes in order to take advantage of multiple cores/CPUs</li>
+					<li>Worked on several large application features including autocomplete search, copy-paste, commenting, etc.</li>
+				</ul>
+			</div>
+			<div class="workplace">
+				<div class="work-header">
 					<h1 class="work-title"><span class="light-red">Ticketfi</span> - <span class="extra-light-red">Full Stack Developer</span></h1>
-					<h3>
-			<!-- 			Co-op Evaluation: Outstanding
+					<h3 class="work-evaluation">
+						Co-op Evaluation: Outstanding
 						<i class="fa fa-star yellow"></i> 
 						<i class="fa fa-star yellow"></i>
 						<i class="fa fa-star yellow"></i>
 						<i class="fa fa-star yellow"></i>
-						<i class="fa fa-star yellow"></i> -->
+						<i class="fa fa-star yellow"></i>
 					</h3>
-					<p class="work-description">Worked for a ticketing startup with the goal of creating super nice events really quickly</p>
-					<ul>
-						<li>Redesigned homepage to improve user experience and increase signups, responsible for overall UX/UI of site</li>
-						<li>Implemented several core features including a form builder, an event invitation system, email and more</li>
-						<li>Worked in PHP using the Laravel framework with a MySQL backend, used jQuery and Bootstrap on the frontend</li>
-					</ul>
 				</div>
-				<div class="workplace-wrapper">
+				<p class="work-description">Worked for a ticketing startup with the goal of creating super nice events really quickly</p>
+				<ul class="work-achievements">
+					<li>Redesigned homepage to improve user experience and increase signups, responsible for overall UX/UI of site</li>
+					<li>Implemented several core features including a form builder, an event invitation system, email and more</li>
+					<li>Worked in PHP using the Laravel framework with a MySQL backend, used jQuery and Bootstrap on the frontend</li>
+				</ul>
+			</div>
+			<div class="workplace">
+				<div class="work-header">
 					<h1 class="work-title"><span class="light-red">TELUS Health</span> - <span class="extra-light-red">Software Developer</span></h1>
-					<h3>
-			<!-- 			Co-op Evaluation: Very Good
+					<h3 class="work-evaluation">
+						Co-op Evaluation: Very Good
 						<i class="fa fa-star yellow"></i> 
 						<i class="fa fa-star yellow"></i>
-						<i class="fa fa-star yellow"></i> -->
+						<i class="fa fa-star yellow"></i>
 					</h3>
-					<p class="work-description">Worked on PS Suite, an electronic medical record service for doctors</p>
-					<ul>
-						<li>Developed full system anonymization software to increase patient safety and security for PS Suite, an electronic medical record service for doctors</li>
-						<li>Improved code security by using Microsoft’s Fortify tool to prevent issues such as SQL and XML injections, path manipulations and DOS attacks</li>
-					</ul>
 				</div>
+				<p class="work-description">Worked on PS Suite, an electronic medical record service for doctors</p>
+				<ul class="work-achievements">
+					<li>Developed full system anonymization software to increase patient safety and security for PS Suite, an electronic medical record service for doctors</li>
+					<li>Improved code security by using Microsoft’s Fortify tool to prevent issues such as SQL and XML injections, path manipulations and DOS attacks</li>
+				</ul>
 			</div>
 		</div>
+	</article>
+	<article id="section-5">
+		Contact Me
 	</article>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/project-modals.js"></script>
+	<script src="assets/js/skills.js"></script>
 	<script src="assets/libraries/firefly/jquery.firefly.js"></script>
 	<script src="assets/libraries/typed/typed.js"></script>
 </body>

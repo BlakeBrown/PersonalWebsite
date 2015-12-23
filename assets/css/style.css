@@ -62,10 +62,16 @@ body {
 	color: #e3e0cf;
 }
 .palette-grey {
-	color: #9fa8a3
+	color: #9fa8a3;
 }
 .opaque {
 	opacity: 1 !important;
+}
+.no-padding {
+	padding: 0;
+}
+.no-margin {
+	margin: 0;
 }
 /* Prevents text selection when user clicks rapidly on an icon, button, etc. */
 .no-select {
@@ -228,7 +234,7 @@ body {
 }
 .modal-title {
 	text-align: center;
-	font-family: 'Lato', 'Arvo', sans-serif;
+	font-family: 'Arvo', sans-serif;
 	font-size: 35px;
 	color: #696969;
 	margin: 0;
@@ -465,7 +471,6 @@ body {
 	animation: grow 5s ease-in-out forwards;
 	border-radius: 50%;
 	transform: translate(-50%, -50%);
-	box-shadow: ;
 }
 #loading-text {
 	font-family: 'Arvo', Georgia, Times, serif;
@@ -560,6 +565,7 @@ body {
 	margin: 10px auto;
 	-webkit-filter: grayscale(60%);
 	box-shadow: inset 0 0 0 2px #484848;
+	z-index: 3;
 }
 #profile-button-wrapper {
 	width: 100%;
@@ -568,7 +574,8 @@ body {
 }
 .profile-button {
 	display: inline-block;
-	margin-top: 50px;
+	margin: 50px 50px 0 50px;
+	z-index: 3;
 }
 .profile-button-icon {
 	border-radius: 50%;
@@ -580,7 +587,6 @@ body {
 	font-size: 36px;
 	height: 4em;
 	text-align: center;
-	margin: 0 50px;
 	transition: .3s ease-out;
 }
 .profile-button-icon:hover {
@@ -693,17 +699,23 @@ body {
 	color: #fff;
 }
 #intro-header {
-	font-family: 'Lato', 'Helvetica', sans-serif;
+	font-family: 'Kalam', 'Helvetica', sans-serif;
 	font-size: 80px;
 	font-weight: 300;
 	display: inline-block;
 	height: 96px;
 	margin: 0;
+/*    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 20s infinite linear;*/
 }
 .intro-description {
 	font-family: 'Lato', 'Helvetica', sans-serif;
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 100;
+	line-height: 24px;
 }
 /*  ============================= 
 	========= SECTION 2 ========= 
@@ -719,27 +731,50 @@ body {
 	margin: 0;
 	padding-bottom: 5px;
 	margin-bottom: 15px;
+}    
+#skills-list {
+	width: 80%;
+    margin: 0 auto;
 }
 .skill {
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
 	list-style-type: none;
 	display: inline-block;
 	border: 0px solid #2F576B;
 	padding: 5px 10px;
 	border-radius: 4px;
-	background-color: #6099B5;
-	font-family: 'Lato', sans-serif;
+	background-color: #4F7084;
 	margin: 10px;
-	font-weight: 300;
 	transition: background-color 0.3s ease-in-out;
 }
 .skill:hover {
 	background-color: #9ACAE2;
 	cursor: pointer;
 }
+.skill-selected {
+	background-color: #965348;
+}
+.skill-selected:hover {
+	background-color: #BB6C60;
+}
 .skill-description-wrapper {
 	text-align: left;
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 24px;
+}
+.skill-toggle-list {
+	color: #8FD187;
+}
+.skill-toggle-list:hover {
+	color: #CAFDC4;
+	cursor: pointer;
+}
+.coop-list {
+
 }
 /*  ============================= 
 	========= SECTION 3 ========= 
@@ -795,7 +830,7 @@ body {
 	opacity: 1;
 }
 .project-title {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Arvo', serif;
 	font-size: 35px;
 	color: #ECECEC;
 	margin: 0;
@@ -840,7 +875,6 @@ body {
 	========= SECTION 4 ========= 
 	=============================  */
 #section-4 {
-	background-image: url("../images/stardust.png");
 	padding: 50px 0;
 	color: #fff;
 }
@@ -853,14 +887,39 @@ body {
 	padding-bottom: 5px;
 	margin-bottom: 15px;
 }
-.workplace-wrapper {
-	font-family: 'Arvo';	
+.workplace {
+	padding: 10px;
+	transition: box-shadow 0.3s ease-in-out;
+}
+/*.workplace:hover {
+	-webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}*/
+.work-header {
+	display: table;
+	width: 100%;
 }
 .work-title {
-	font-family: 'Arvo';
+	font-family: 'Arvo', serif;
+	display: table-cell;
+}
+.work-evaluation {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	display: table-cell;
+	text-align: right;
 }
 .work-description {
-	font-family: 'Arvo';
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+}
+.work-achievements {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+.work-achievements > li {
+	padding: 5px 0;
 }
 .work-img {
 	height: 50px;

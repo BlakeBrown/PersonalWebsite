@@ -15,7 +15,7 @@
 			'http://dharmmotyar.googlecode.com/svn/trunk/images//spark2.png',
 			'http://dharmmotyar.googlecode.com/svn/trunk/images/spark3.png',
 			'http://dharmmotyar.googlecode.com/svn/trunk/images/spark4.png'],
-		total : 50
+		total : 30
 	};
 	
 	$.firefly = function(settings) {

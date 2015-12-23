@@ -1,5 +1,3 @@
-// Javascript needed for project modals
-
 function removeModal() {
 	$('#overlay').remove();
 	$('.modal').removeClass('fadeIn');

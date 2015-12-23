@@ -37,11 +37,11 @@ $(window).load(function() {
 	    if(!seenIntroHeader) {
 	    	if(isScrolledIntoView('#intro-header')) {
 				seenIntroHeader = true;
-				$("#intro-header").addClass('fadeInUp');
-		    	$("#intro-header").typed({
-		    	    strings: ["Hello World"],
-		    	    typeSpeed: 100
-		    	});
+				// $("#intro-header").addClass('fadeInUp');
+		    	// $("#intro-header").typed({
+		    	//     strings: ["Hello World"],
+		    	//     typeSpeed: 100
+		    	// });
 	    	}
 	    }
 	});
