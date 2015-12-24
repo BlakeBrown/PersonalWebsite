@@ -71,56 +71,25 @@ function addEventListeners() {
 }
 
 $('#hackroulette').on('click', function() {
-	// Load modal via ajax
-	$.ajax({
-		url: 'assets/modals/hackroulette-modal.html',
-		method: 'GET',
-		success: function(data) {
-			// Add modal to the DOM
-			$('body').before(data);
-			addEventListeners();
-		}, error: function() {
-			alert('Something went wrong, please contact Blake.');
-		}
-	});
+	openModal('hackroulette');
 });
 
 $('#python-compiler').on('click', function() {
-	// Load modal via ajax
-	$.ajax({
-		url: 'assets/modals/python-compiler-modal.html',
-		method: 'GET',
-		success: function(data) {
-			// Add modal to the DOM
-			$('body').before(data);
-			// Add event listeners
-			addEventListeners();
-		}, error: function() {
-			alert('Something went wrong, please contact Blake.');
-		}
-	});
+	openModal('python-compiler');
 });
 
 $('#noflix').on('click', function() {
-	// Load modal via ajax
-	$.ajax({
-		url: 'assets/modals/noflix-modal.html',
-		method: 'GET',
-		success: function(data) {
-			// Add modal to the DOM
-			$('body').before(data);
-			// Add event listeners
-			addEventListeners();
-		}, error: function() {
-			alert('Something went wrong, please contact Blake.');
-		}
-	});
+	openModal('noflix');
 });
 
 $('#infinitefilespace').on('click', function() {
+	openModal('filespace');
+});
+
+function openModal(identifier) {
 	// Load modal via ajax
 	$.ajax({
-		url: 'assets/modals/filespace-modal.html',
+		url: 'assets/modals/' + identifier + '-modal.html',
 		method: 'GET',
 		success: function(data) {
 			// Add modal to the DOM
@@ -131,4 +100,4 @@ $('#infinitefilespace').on('click', function() {
 			alert('Something went wrong, please contact Blake.');
 		}
 	});
-});
+}

@@ -35,8 +35,8 @@
 		</ul>
 	</header>
 	<article id="section-0" class="animated">
-		<h1 id="welcome" class="site-header palette-white" style="opacity:0">Blakelock</h1> 
-		<h1 id="brown" class="site-header palette-brown" style="opacity:0">Brown</h1>
+		<h1 id="welcome" class="site-header large-header palette-white" style="opacity:0">Blakelock</h1> 
+		<h1 id="brown" class="site-header large-header palette-brown" style="opacity:0">Brown</h1>
 		<div id="profile-picture"></div>
 		<div id="profile-button-wrapper">
 			<a class="profile-button" href="http://www.github.com/blakebrown" target="_blank"><i class="profile-button-icon fa fa-git"></i></a>
@@ -47,17 +47,17 @@
 	</article>
 	<article id="section-1">
 		<div class="container" style="border-bottom: 2px solid #CACACA">
-			<span id="intro-header">Hello World</span> 
-			<p id="intro-description" class="intro-description">Welcome to my website! My name is Blake Brown and I am an engineering student, full stack web developer and aspiring entrepreneur. My goal in life is simple; I want to help advance society using my immense passion for science and technology. 
-			<br>
-			<br>
-			As an innovator, I am always trying to improve quality of life and I have a tremendous amount of dedication for everything that I do. In the past year I’ve placed within the top 10% of my class, achieved the highest possible assessment on two consecutive co-op terms and become an academic class representative while starting an intramural soccer team. I am always trying to become a better version of myself and I love helping others achieve their goals just as much as I do working towards my own ambitions and dreams. 
-			<br>
-			<br>
-			In my free time, I also have a huge passion for the plethora of exciting activities this world has to offer and I absolutely love wakeboarding, rollerblading and unicycling/juggling.
-			<br>
-			<br>
-			I hope you learn something new about me and enjoy your stay, bon voyage! 
+			<h2 id="intro-header">Hello World</h2> 
+			<p class="description">Welcome to my website! My name is Blake Brown and I am an engineering student, full stack web developer and aspiring entrepreneur. My goal in life is simple; I want to help advance society using my immense passion for science and technology. As a software developer, I can build exceptional web, mobile and desktop applications, but I am also highly interested in learning hardware and circuit design as I study electrical engineering at the University of Waterloo.
+				<br>
+				<br>
+				One of my strongest traits is that I have a tremendous amount of dedication for everything that I do. In the past year I’ve placed within the top 10% of my class, achieved the highest possible assessment on two consecutive co-op terms and become an academic class representative while starting an intramural soccer team. I work rigorously hard on myself and I don’t accept mediocrity. I want to make the world a better place which means a lot of hard work, but I’m always willing to take a step back in order to assist others. I love helping others achieve their goals just as much as I do working towards my own ambitions and dreams. 
+				<br>
+				<br>
+				In my free time, I have a huge passion for the plethora of exciting activities this world has to offer and I absolutely love wakeboarding, rollerblading and juggling. I also play piano, unicycle and solve Robik’s cubes – I have many hobbies so I’m sure we have some in common! 
+				<br>
+				<br>
+				I hope you learn something new about me and enjoy your stay, bon voyage! 
 				<i>Once you learn that, you'll never be the same again.</i>
 				<br>
 			</p>
@@ -65,7 +65,7 @@
 	</article>
 	<article id="section-2">
 		<div class="container">
-			<h3 id="skills-header">Skills</h3>
+			<h3 id="skills-header" class="large-header">Skills</h3>
 			<ul id="skills-list">
 				<li class="skill skill-selected" data-skill="skill-html">HTML</li>
 				<li class="skill" data-skill="skill-css">CSS</li>
@@ -82,29 +82,31 @@
 				<li class="skill" data-skill="skill-android">Java (Android)</li>
 				<li class="skill" data-skill="skill-ios">Swift & Objective C (iOS)</li>
 			</ul>
-			<div class="skill-description-wrapper">
-				<p class="skill-description">
-				HTML - my favourite markup language! While I think it's important to write clean, semantic markup, my favourite part of HTML actually comes from the HTML5 specification for javascript API's. There are some wicked cool applications you can build with powerful tools like media capture, WebSockets, local/session storage, etc. and I love incorporating these features into my side projects.
+			<div class="skill-details">
+				<p class="description">
+				<h3 id="skill-type">HTML</h3>
+				<br>
+				The BEST markup language! While I think it's important to write clean, semantic markup, my favourite part of HTML actually comes from the HTML5 specification for javascript API's. There are some wicked cool applications you can build with powerful tools like media capture, WebSockets, local/session storage, etc. and I love incorporating these features into my side projects.
 				</p>
 				<div class="skill-list-wrapper">
 				<h4 class="no-margin">Two Co-op Jobs <i id="skill-toggle-jobs-list" class="skill-toggle-list fa fa-chevron-down no-select"></i></h4>
-				<ul id="skill-jobs-list">
+				<ul id="skill-jobs-list" class="skill-details-list description">
 					<li>Ticketfi</li>
 					<li>Genesys</li>
 				</ul>
 				</div>
 				<h4 class="no-margin">Three Side Projects <i id="skill-toggle-projects-list" class="skill-toggle-list fa fa-chevron-down no-select"></i></h4>
-				<ul id="skill-projects-list">
-					<li>Hackroulette</li>
-					<li>Python Compiler</li>
-					<li>Filespace</li>
+				<ul id="skill-projects-list" class="skill-details-list description">
+					<li data-action="open-modal" data-identifier="hackroulette">Hackroulette</li>
+					<li data-action="open-modal" data-identifier="python-compiler">Python Compiler</li>
+					<li data-action="open-modal" data-identifier="filespace">Filespace</li>
 				</ul>
 			</div>
 		</div>
 	</article>
 	<article id="section-3">
 		<div class="container">
-			<h1 id="projects-header">Projects</h1>
+			<h1 id="projects-header" class="large-header">Projects</h1>
 			<div id="projects-wrapper">
 				<div id="hackroulette" class="project">
 					<div class="black-overlay">
@@ -117,7 +119,7 @@
 				<div id="python-compiler" class="project">
 					<div class="black-overlay">
 						<div class="project-details-wrapper">
-							<h1 class="project-title">Python Compiler</h1>`
+							<h1 class="project-title">Python Compiler</h1>
 							<p class="project-description">An online compiler for python scripts</p>
 						</div>
 					</div>
@@ -152,7 +154,7 @@
 	</article>
 	<article id="section-4">
 		<div class="container">
-			<h1 id="workplace-header">Work Experience</h1>
+			<h1 id="workplace-header" class="large-header">Work Experience</h1>
 			<div class="workplace">
 				<div class="work-header">
 					<h1 class="work-title"><span class="light-red">Genesys Labratories</span> - <span class="extra-light-red">Front End Developer</span></h1>

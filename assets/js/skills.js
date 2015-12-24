@@ -1,3 +1,8 @@
+$('.skill').on('click', function() {
+	$('.skill').removeClass('skill-selected');
+	$(this).addClass('skill-selected');
+});
+
 $('#skill-toggle-jobs-list').on('click', function() {
 	toggleChevron($(this));
 });
@@ -22,3 +27,11 @@ function toggleChevron($selector) {
 		list.slideDown();
 	}
 }
+
+$('.skill-details-list').find('li').on('click', function() {
+	var action = $(this).data('action')
+	var identifier = $(this).data('identifier');
+	if(action == 'open-modal') {
+		openModal(identifier);
+	}
+});

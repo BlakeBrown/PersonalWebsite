@@ -4,7 +4,7 @@
 	===============================================  */
 body {
 	margin: 0;
-	background-color: #171B19;
+	background-color: #222;
 }
 .container {
   padding-right: 15px;
@@ -26,6 +26,33 @@ body {
   .container {
     width: 1170px;
   }
+}
+.description {
+	font-family: 'Lato', 'Helvetica', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 24px;
+}
+.large-header {
+	font-size: 70px;
+}
+@media (min-height: 1000px) {
+	.description {
+		font-size: 22px;
+		font-weight: 300;
+		line-height: 28px;
+	}
+	.large-header {
+		font-size: 90px;
+	}
+}
+@media (max-height: 700px) {
+	.description {
+		font-size: 18px;
+	}
+	.large-header {
+		font-size: 70px;
+	}
 }
 .black-overlay {
 	background-color: rgba(38,38,38,0.3);
@@ -211,7 +238,7 @@ body {
 }
 .modal {
 	position: fixed;
-	width: 60vw;
+	width: 80vw;
 	background: #fff;
 	padding: 15px 30px;
 	margin: 0 auto;
@@ -219,7 +246,7 @@ body {
 	border-radius: 4px;
 	left: 0;
 	right: 0;
-	top: 15vh;
+	top: 10vh;
 	z-index: 2;
 }
 .close-modal {
@@ -235,7 +262,7 @@ body {
 .modal-title {
 	text-align: center;
 	font-family: 'Arvo', sans-serif;
-	font-size: 35px;
+	font-size: 40px;
 	color: #696969;
 	margin: 0;
 	width: 100%;
@@ -247,13 +274,21 @@ body {
 }
 .modal-description {
 	font-family: 'Lato', 'Arvo', 'Arial', sans-serif;
+	font-size: 18px;
 	font-weight: 300;
 	color: #444;
+	margin-top: 10px;
+}
+.modal-thumbnail-wrapper {
+	position: relative;
+	height: 300px;
+	width: 60vw;
+	margin: 0 auto;
 }
 .modal-thumbnail {
 	position: absolute;
 	height: 300px;
-	width: 50vw;
+	width: 60vw;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
@@ -261,18 +296,12 @@ body {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 }
+.modal-thumbnail-wrapper-tall {
+	height: 30vh;
+}
 .modal-thumbnail-tall {
 	height: 30vh;
     width: 20vw;
-}
-.modal-thumbnail-wrapper {
-	position: relative;
-	height: 300px;
-	width: 50vw;
-	margin: 0 auto;
-}
-.modal-thumbnail-wrapper-tall {
-	height: 30vh;
 }
 .modal-image-arrow {
 	position: absolute;
@@ -408,9 +437,51 @@ body {
 	background: #e05d5d;
 }
 /* Responsive styles */
-@media screen and (max-height: 900px) {
-	.modal {
-		top: 10vh;
+@media screen and (min-height: 1000px) {
+	.modal-title {
+		font-size: 50px;
+	}
+	.modal-description {
+		font-size: 20px;
+	}
+	.modal-button {
+		font-size: 22px;
+	}
+	.modal-image-arrow {
+		font-size: 30px;
+		top: 60%;
+	}
+	.modal-thumbnail-wrapper {
+		height: 400px;
+		width: 60vw;
+	}
+	.modal-thumbnail {
+		height: 400px;
+		width: 60vw;
+	}
+	.modal-thumbnail-wrapper-tall {
+		height: 40vh;
+	}
+	.modal-thumbnail-tall {
+		height: 40vh;
+	}
+	.noflix-thumbnail-1 {
+		width: 25vw;
+	}
+	.close-modal {
+		font-size: 20px;
+	}
+}
+/* Cap the width of modal for very wide screens */
+@media screen and (min-width: 1300px) {
+	#project-modal {
+		width: 1100px;
+	}
+	.modal-thumbnail-wrapper {
+		width: 780px;
+	}
+	.modal-thumbnail {
+		width: 780px;
 	}
 }
 @media screen and (max-height: 750px) {
@@ -421,6 +492,9 @@ body {
 @media screen and (max-height: 700px) {
 	.modal {
 		top: 2.5vh;
+	}
+	.modal-title {
+		font-size: 35px;
 	}
 	.modal-description {
 		font-size: 16px;
@@ -565,7 +639,6 @@ body {
 	margin: 10px auto;
 	-webkit-filter: grayscale(60%);
 	box-shadow: inset 0 0 0 2px #484848;
-	z-index: 3;
 }
 #profile-button-wrapper {
 	width: 100%;
@@ -702,20 +775,27 @@ body {
 	font-family: 'Kalam', 'Helvetica', sans-serif;
 	font-size: 80px;
 	font-weight: 300;
-	display: inline-block;
-	height: 96px;
-	margin: 0;
-/*    color: #f35626;
-    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 20s infinite linear;*/
+	margin: 30px 0;
+	line-height: 30px;
 }
 .intro-description {
 	font-family: 'Lato', 'Helvetica', sans-serif;
-	font-size: 18px;
-	font-weight: 100;
+	font-size: 20px;
+	font-weight: 300;
 	line-height: 24px;
+}
+/* Responsive styles */
+@media screen and (min-height: 1000px) {
+	#intro-header {
+		font-size: 100px;
+		margin: 40px 0;
+		line-height: 30px;
+	}
+}
+@media (max-height: 700px) {
+	#intro-header {
+		font-size: 70px;
+	}
 }
 /*  ============================= 
 	========= SECTION 2 ========= 
@@ -727,54 +807,79 @@ body {
 }
 #skills-header {
 	font-family: 'Lobster', Georgia, Times, serif;
-	font-size: 70px;
 	margin: 0;
 	padding-bottom: 5px;
 	margin-bottom: 15px;
 }    
 #skills-list {
-	width: 80%;
+	width: 90%;
     margin: 0 auto;
+    padding: 0;
 }
 .skill {
 	font-family: 'Lato', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 300;
-	list-style-type: none;
 	display: inline-block;
-	border: 0px solid #2F576B;
-	padding: 5px 10px;
-	border-radius: 4px;
-	background-color: #4F7084;
+	background-color: #444D54;
 	margin: 10px;
+	padding: 5px 10px;
+	border: 0px solid #2F576B;
+	border-radius: 4px;
+	text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+	list-style-type: none;
 	transition: background-color 0.3s ease-in-out;
 }
 .skill:hover {
-	background-color: #9ACAE2;
+	background-color: #9AC3D6;
 	cursor: pointer;
 }
 .skill-selected {
-	background-color: #965348;
+	background-color: #569E80;
 }
 .skill-selected:hover {
-	background-color: #BB6C60;
+	background-color: #5ED4A3;
 }
-.skill-description-wrapper {
+#skill-type {
+	font-size: 24px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #fff;
+	display: inline-block;
+}
+.skill-details {
 	text-align: left;
 	font-family: 'Lato', sans-serif;
-	font-size: 18px;
-	font-weight: 100;
+	font-size: 20px;
+	font-weight: 300;
 	line-height: 24px;
 }
 .skill-toggle-list {
-	color: #8FD187;
+	color: #569E80;
 }
 .skill-toggle-list:hover {
-	color: #CAFDC4;
+	color: #5ED4A3;
 	cursor: pointer;
 }
-.coop-list {
-
+.skill-details-list > li:hover {
+	color: #A6FFDA;
+	cursor: pointer;
+}
+/* Responsive styles */
+@media (min-height: 1000px) {
+	.skill {
+		font-size: 22px;
+	}
+}
+@media (max-height: 700px) {
+	.skill {
+		font-size: 18px;
+	}
+	.skill-details {
+		font-size: 18px;
+	}
+	#skill-type {
+		font-size: 20px;
+	}
 }
 /*  ============================= 
 	========= SECTION 3 ========= 
@@ -787,10 +892,10 @@ body {
 }
 #projects-header {
 	font-family: 'Lobster', Georgia, Times, serif;
-	font-size: 70px;
 	margin: 0;
 	padding-bottom: 5px;
 	margin-bottom: 15px;
+	color: #222;
 }
 #projects-wrapper {
 	text-align: center;
@@ -801,7 +906,7 @@ body {
 	height: 300px;
 	width: 300px;
 	box-sizing: border-box;
-	border: 1px solid #eee;
+	border: 1px solid #fff;
 	margin: 10px;
 }
 .black-overlay {
@@ -831,13 +936,14 @@ body {
 }
 .project-title {
 	font-family: 'Arvo', serif;
-	font-size: 35px;
+	font-size: 40px;
 	color: #ECECEC;
 	margin: 0;
 	width: 100%;
 }
 .project-description {
 	font-family: 'Lato', sans-serif;
+	font-size: 18px;
 	font-weight: 300;
 	color: #ECECEC;
 }
@@ -870,7 +976,19 @@ body {
 #hackroulette:hover > #hackroulette-title {
 	opacity: 1;
 }*/
-
+/* Responsive Styles */
+@media (min-width: 1200px) {
+	.project {
+		height: 350px;
+		width: 350px;
+	}
+	.project-title {
+		font-size: 40px;
+	}
+	.project-description {
+		font-size: 20px;
+	}
+}
 /*  ============================= 
 	========= SECTION 4 ========= 
 	=============================  */
@@ -882,7 +1000,6 @@ body {
 	font-family: 'Lobster', Georgia, Times, serif;
 	text-align: center;
 	color: #fff;
-	font-size: 59px;
 	margin: 0;
 	padding-bottom: 5px;
 	margin-bottom: 15px;
