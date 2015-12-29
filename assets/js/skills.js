@@ -28,10 +28,30 @@ function toggleChevron($selector) {
 	}
 }
 
+// Scrolls to a certain employer and adds an animation to identify them
+function scrollToEmployer(identifier) {
+	$('.workplace').removeClass('shake');
+	// If there's enough room scroll to the element, else scroll to the bottom of the page
+	var scrollValue;
+	if($('#' + identifier).offset().top + $(window).height() < $(document).height()) {
+		scrollValue = $('#' + identifier).offset().top - 100;
+	} else {
+		scrollValue = $(document).height() - $(window).height();
+	}
+	$('html, body').animate({
+	    scrollTop: scrollValue
+	}, 2000);
+	setTimeout(function() {
+		$('#' + identifier).addClass('shake');
+	}, 2500);
+}
+
 $('.skill-details-list').find('li').on('click', function() {
 	var action = $(this).data('action')
 	var identifier = $(this).data('identifier');
 	if(action == 'open-modal') {
 		openModal(identifier);
+	} else if(action == 'scroll') {
+		scrollToEmployer(identifier);
 	}
 });
