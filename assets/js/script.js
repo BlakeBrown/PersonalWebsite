@@ -23,8 +23,6 @@ $(window).load(function() {
 	// 	$('#intro-header').text('Bonsoir!');
 	// } 
 
-	
-
 	var seenIntroHeader = false;
 
 	// Fade out section-0 on window scroll
@@ -47,8 +45,7 @@ $(window).load(function() {
 	});
 
 	// Returns true if element is scrolled into view
-	function isScrolledIntoView(elem)
-	{
+	function isScrolledIntoView(elem) {
 	    var $elem = $(elem);
 	    var $window = $(window);
 
@@ -64,19 +61,6 @@ $(window).load(function() {
 	$('button').on('click', function() {
 		$(this).addClass('cbutton--click');
 	});
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
 
 

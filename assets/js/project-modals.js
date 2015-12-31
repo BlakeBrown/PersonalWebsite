@@ -35,7 +35,7 @@ function switchModalImage(direction) {
 	$('.modal-image-control[data-modal-control="' + thumbnailId + '"]').addClass('modal-image-control-selected');
 };
 
-function addEventListeners() {
+function addModalEventListeners() {
 	$('.modal-image-control').on('click', function() {
 		// Change the image
 		var currentImage = $('.modal-thumbnail.opaque');
@@ -95,7 +95,8 @@ function openModal(identifier) {
 			// Add modal to the DOM
 			$('body').before(data);
 			// Add event listeners
-			addEventListeners();
+			addModalEventListeners();
+			console.log('added');
 		}, error: function() {
 			alert('Something went wrong, please contact Blake.');
 		}

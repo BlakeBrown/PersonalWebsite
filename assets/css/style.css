@@ -54,6 +54,12 @@ body {
 		font-size: 70px;
 	}
 }
+.link {
+	color: #BBDBFD;
+	text-decoration: none;
+	font-style: italic;
+	border-bottom: 1px solid #D0E7FF;
+}
 .black-overlay {
 	background-color: rgba(38,38,38,0.3);
 }
@@ -768,7 +774,6 @@ body {
 	========= SECTION 1 ========= 
 	=============================  */
 #section-1 {
-	padding: 50px 0;
 	text-align: center;
 	color: #fff;
 }
@@ -780,8 +785,8 @@ body {
 	font-family: 'Kalam', 'Helvetica', sans-serif;
 	font-size: 80px;
 	font-weight: 300;
-	margin: 30px 0;
-	line-height: 30px;
+	margin-top: 50px;
+	margin-bottom: 0;
 }
 .intro-description {
 	font-family: 'Lato', 'Helvetica', sans-serif;
@@ -795,25 +800,21 @@ body {
 	width: 50%;
 	height: 250px;
 	border-radius: 4px;
+	background-size: cover;
 }
 #intro-description-photo-1 {
 	background-image: url("../images/seas-the-night.jpg");
-	background-size: cover;
 }
 #intro-description-photo-2 {
 	background-image: url("../images/startup-weekend.jpg");
-	background-size: cover;
 }
 #intro-description-photo-3 {
 	background-image: url("../images/quebec.jpg");
-	background-size: cover;
 }
 /* Responsive styles */
 @media screen and (min-width: 1000px), screen and (min-width: 1000px) {
 	#intro-header {
-		font-size: 100px;
-		margin: 45px 0;
-		line-height: 30px;
+		font-size: 110px;
 	}
 }
 @media (max-width: 700px) {
@@ -824,6 +825,13 @@ body {
 /*  ============================= 
 	========= SECTION 2 ========= 
 	=============================  */
+#javascript-meme {
+	background-image: url("../images/javascript.jpg");
+	background-size: cover;
+	padding: 50px 0;
+	width: 50%;
+	height: 250px;
+}
 #section-2 {
 	padding-bottom: 50px;
 	text-align: center;
@@ -831,8 +839,8 @@ body {
 }
 #skills-header {
 	font-family: 'Lobster', Georgia, Times, serif;
-	margin: 0;
 	padding-bottom: 5px;
+	margin-top: 50px;
 	margin-bottom: 15px;
 }    
 #skills-list {
@@ -871,10 +879,7 @@ body {
 	border-bottom: 1px solid #fff;
 	margin-bottom:0;
 }
-#skill-description {
-	margin-top: 0;
-}
-.skill-details {
+#skill-details {
 	text-align: left;
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
@@ -891,9 +896,16 @@ body {
 	color: #5ED4A3;
 	cursor: pointer;
 }
-.skill-details-list > li:hover {
+.skill-details-list > li > span:hover {
 	color: #A6FFDA;
 	cursor: pointer;
+}
+.skill-details-list-link {
+	color: #fff;
+	text-decoration: none;
+}
+.skill-details-list-link:hover {
+	color: #A6FFDA;
 }
 /* Responsive styles */
 @media (min-height: 1000px) {
@@ -905,7 +917,7 @@ body {
 	.skill {
 		font-size: 18px;
 	}
-	.skill-details {
+	#skill-details {
 		font-size: 18px;
 	}
 	#skill-type {
@@ -1051,7 +1063,7 @@ body {
 }
 .work-evaluation {
 	font-family: 'Lato', sans-serif;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 300;
 	margin: 10px 0;
 }
