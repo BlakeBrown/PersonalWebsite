@@ -12,6 +12,22 @@ $(window).load(function() {
 		}, 1000);
 	}, 1000);
 
+	// Initializes the slideshow in #section-1
+	function startSlideshow() {
+		setInterval(function() {
+			var currentPhoto = $('.intro-description-photo.opaque');
+			var photoId = currentPhoto.data('photo-id');
+			currentPhoto.removeClass('opaque');
+			if(photoId == 3) {	
+				photoId = 1;
+			} else {
+				photoId++;
+			}
+			$('.intro-description-photo[data-photo-id="' + photoId + '"]').addClass('opaque');			
+		}, 8000);
+	}
+	startSlideshow();
+
 	// // Change the text
 	// var date = new Date();
 	// var localHour = date.getHours();

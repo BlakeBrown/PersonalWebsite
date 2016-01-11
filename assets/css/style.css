@@ -6,6 +6,27 @@ body {
 	margin: 0;
 	background-color: #222;
 }
+.small-container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media (min-width: 768px) {
+  .small-container {
+    width: 700px;
+  }
+}
+@media (min-width: 992px) {
+  .small-container {
+    width: 950px;
+  }
+}
+@media (min-width: 1200px) {
+  .small-container {
+    width: 1000px;
+  }
+}
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -379,7 +400,6 @@ body {
 .noflix-thumbnail-2 {
 	background: url("../images/projects/noflix-thumb2.jpeg") no-repeat;
 	background-size: cover;
-	width: 50vw;
 }
 .filespace-thumbnail-1 {
 	background: url("../images/projects/filespace-thumb1.png") no-repeat;
@@ -395,6 +415,15 @@ body {
 	background: url("../images/projects/filespace-thumb3.png") no-repeat;
 	background-size: cover;
 	border: 1px solid #CACACA;
+}
+.indoor-navigator-thumbnail-1 {
+	background: url("../images/projects/indoor-navigator-thumb1.png") no-repeat;
+	background-size: cover;
+}
+.indoor-navigator-thumbnail-2 {
+	background: url("../images/projects/indoor-navigator-thumb2.png") no-repeat;
+	background-size: cover;
+	width: 50vw;
 }
 .modal-footer {
 	margin-top: 20px;
@@ -441,7 +470,8 @@ body {
 	border-bottom: 2px solid #e76969;
 }
 .modal-button-app-store:hover {
-	background: #e05d5d;
+	cursor: default !important;
+	/*background: #e05d5d;*/
 }
 /* Responsive styles */
 @media screen and (min-height: 1000px) {
@@ -471,8 +501,6 @@ body {
 	}
 	.modal-thumbnail-tall {
 		height: 40vh;
-	}
-	.noflix-thumbnail-1 {
 		width: 25vw;
 	}
 	.close-modal {
@@ -512,15 +540,15 @@ body {
 	#noflix-modal-description {
 		font-size: 15px;
 	}
-	.noflix-thumbnail-1 {
-		height: 250px;
-		width: 400px;
-	}
 	.modal-thumbnail-wrapper {
 		height: 270px;
 	}
 	.modal-thumbnail {
 		height: 270px;
+	}
+	.modal-thumbnail-tall {
+		height: 250px;
+		width: 400px;
 	}
 	.modal-button {
 		font-size: 18px;
@@ -780,6 +808,7 @@ body {
 #intro-container {
 	padding-bottom: 50px;
 	border-bottom: 2px solid #CACACA;
+	box-sizing: border-box;
 }
 #intro-header {
 	font-family: 'Kalam', 'Helvetica', sans-serif;
@@ -794,13 +823,20 @@ body {
 	font-weight: 300;
 	line-height: 24px;
 }
-.intro-description-photo {
-	padding: 50px 0;
+#slideshow {
+	position: relative;
+	height: 350px;
+	width: 60%;
 	margin: 0 auto;
-	width: 50%;
-	height: 250px;
+}
+.intro-description-photo {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 	border-radius: 4px;
 	background-size: cover;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
 }
 #intro-description-photo-1 {
 	background-image: url("../images/seas-the-night.jpg");
@@ -829,7 +865,7 @@ body {
 	background-image: url("../images/javascript.jpg");
 	background-size: cover;
 	padding: 50px 0;
-	width: 50%;
+	width: 622px;
 	height: 250px;
 }
 #section-2 {

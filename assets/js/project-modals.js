@@ -86,6 +86,11 @@ $('#infinitefilespace').on('click', function() {
 	openModal('filespace');
 });
 
+$('#indoor-navigator').on('click', function() {
+	openModal('indoor-navigator');
+});
+
+
 function openModal(identifier) {
 	// Load modal via ajax
 	$.ajax({
@@ -96,7 +101,6 @@ function openModal(identifier) {
 			$('body').before(data);
 			// Add event listeners
 			addModalEventListeners();
-			console.log('added');
 		}, error: function() {
 			alert('Something went wrong, please contact Blake.');
 		}
