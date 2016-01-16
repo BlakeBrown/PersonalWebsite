@@ -894,7 +894,7 @@ body {
 	padding: 5px 10px;
 	border: 0px solid #2F576B;
 	border-radius: 4px;
-	text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+	text-shadow: 1px 1px 0px rgba(34,34,34,0.2);
 	list-style-type: none;
 	transition: background-color 0.3s ease-in-out;
 }
@@ -911,9 +911,13 @@ body {
 #skill-type {
 	display: inline-block;
 	font-size: 24px;
-	padding-bottom: 5px;
-	border-bottom: 1px solid #fff;
-	margin-bottom:0;
+	font-weight: 300;
+	background-color: #569E80;
+	padding: 5px 10px;
+	border: 0px solid #2F576B;
+	border-radius: 4px;
+	text-shadow: 1px 1px 0px rgba(34,34,34,0.2);
+	margin-bottom: 0;
 }
 #skill-details {
 	text-align: left;
