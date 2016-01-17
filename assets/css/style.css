@@ -864,9 +864,17 @@ body {
 #javascript-meme {
 	background-image: url("../images/javascript.jpg");
 	background-size: cover;
-	padding: 50px 0;
-	width: 622px;
-	height: 250px;
+	width: 600px;
+    height: 300px;
+	border-radius: 4px;
+}
+#python-meme {
+	background-image: url("../images/python-meme.png");
+	background-size: cover;
+	width: 600px;
+	height: 400px;
+	margin-top: 22px;
+	border-radius: 4px;
 }
 #section-2 {
 	padding-bottom: 50px;
