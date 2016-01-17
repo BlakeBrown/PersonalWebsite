@@ -80,6 +80,14 @@ body {
 		font-size: 70px;
 	}
 }
+@media (max-width: 650px), (max-height: 650px) {
+	.description {
+		font-size: 16px;
+	}
+	.large-header {
+		font-size: 65px;
+	}
+}
 .link {
 	color: #BBDBFD;
 	text-decoration: none;
@@ -958,6 +966,12 @@ body {
 		font-size: 70px;
 	}
 }
+@media (max-width: 650px), (max-height: 650px) {
+	#slideshow {
+		height: 300px;
+		width: 55%;
+	}
+}
 /*  ============================= 
 	========= SECTION 2 ========= 
 	=============================  */
@@ -1075,6 +1089,17 @@ body {
 		font-size: 18px;
 	}
 }
+@media (max-width: 650px), (max-height: 650px) {
+	.skill {
+		font-size: 16px;
+	}
+	#skill-details {
+		font-size: 16px;
+	}
+	#skill-type {
+		font-size: 16px;
+	}
+}
 /*  ============================= 
 	========= SECTION 3 ========= 
 	=============================  */
@@ -1184,6 +1209,18 @@ body {
 		font-size: 20px;
 	}
 }
+@media (max-width: 650px), (max-height: 650px) {
+	.project {
+		height: 275px;
+		width: 275px;
+	}
+	.project-title {
+		font-size: 30px;
+	}
+	.project-description {
+		font-size: 16px;
+	}
+}
 /*  ============================= 
 	========= SECTION 4 ========= 
 	=============================  */
@@ -1249,7 +1286,15 @@ body {
 	.work-title {
 		font-size: 25px;
 	}
-}	
+}
+@media (max-width: 650px), (max-height: 650px) {
+	.workplace {
+		font-size: 16px;
+	}
+	.work-title {
+		font-size: 22px;
+	}
+}
 /*  ============================= 
 	========= SECTION 4 ========= 
 	=============================  */
@@ -1259,4 +1304,9 @@ body {
 	text-align: center;
 	padding: 50px 0;
 	background-color: #eee;
+}
+@media (max-width: 650px), (max-height: 650px) {
+	#section-5 {
+		font-size: 16px;
+	}
 }
