@@ -81,6 +81,12 @@ body {
 	font-style: italic;
 	border-bottom: 1px solid #D0E7FF;
 }
+.footer-link {
+	color: #666;
+	text-decoration: none;
+	font-style: italic;
+	border-bottom: 1px solid #666;
+}
 .black-overlay {
 	background-color: rgba(38,38,38,0.3);
 }
@@ -91,8 +97,14 @@ body {
    height: 0; 
    clear: both;
 }
+.bbb {
+	color: #bbb;
+}
+.white {
+	color: #fff;
+}
 .light-red {
-	color: #FF9595
+	color: rgb(245, 138, 132);
 }
 .extra-light-red {
 	color: #FFE2E8;
@@ -847,6 +859,12 @@ body {
 #intro-description-photo-3 {
 	background-image: url("../images/quebec.jpg");
 }
+#intro-description-photo-4 {
+	background-image: url("../images/soccer.jpg");
+}
+#intro-description-photo-5 {
+	background-image: url("../images/ece.jpg");
+}
 /* Responsive styles */
 @media screen and (min-width: 1000px), screen and (min-width: 1000px) {
 	#intro-header {
@@ -862,7 +880,7 @@ body {
 	========= SECTION 2 ========= 
 	=============================  */
 #javascript-meme {
-	background-image: url("../images/javascript.jpg");
+	background-image: url("../images/javascript-meme.jpg");
 	background-size: cover;
 	width: 600px;
     height: 300px;
@@ -1133,6 +1151,13 @@ body {
 .work-img {
 	height: 50px;
 }
-
-
-
+/*  ============================= 
+	========= SECTION 4 ========= 
+	=============================  */
+#section-5 {
+	font-family: Lato;
+	font-size: 18px;
+	text-align: center;
+	padding: 50px 0;
+	background-color: #BBB;
+}

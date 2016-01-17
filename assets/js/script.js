@@ -18,7 +18,7 @@ $(window).load(function() {
 			var currentPhoto = $('.intro-description-photo.opaque');
 			var photoId = currentPhoto.data('photo-id');
 			currentPhoto.removeClass('opaque');
-			if(photoId == 3) {	
+			if(photoId == $('.intro-description-photo').length) {	
 				photoId = 1;
 			} else {
 				photoId++;
