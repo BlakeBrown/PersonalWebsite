@@ -37,6 +37,7 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .container {
@@ -60,7 +61,11 @@ body {
 	line-height: 24px;
 }
 .large-header {
+	font-family: 'Lobster', Georgia, Times, serif;
 	font-size: 70px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 @media (min-width: 1000px) and (min-height: 1000px) {
 	.description {
@@ -796,9 +801,6 @@ body {
 	.site-header {
 		font-size: 4em;
 	}
-	#intro-header {
-		line-height: 80px;
-	}
 }
 @media screen and (max-width: 500px) {
 	.site-header {
@@ -907,18 +909,6 @@ body {
 	text-align: center;
 	color: #fff;
 }
-#intro-container {
-	padding-bottom: 50px;
-	border-bottom: 2px solid #CACACA;
-	box-sizing: border-box;
-}
-#intro-header {
-	font-family: 'Kalam', 'Helvetica', sans-serif;
-	font-size: 90px;
-	font-weight: 300;
-	margin-top: 50px;
-	margin-bottom: 0;
-}
 .intro-description {
 	font-family: 'Lato', 'Helvetica', sans-serif;
 	font-size: 20px;
@@ -960,16 +950,6 @@ body {
 	background-image: url("../images/ece.jpg");
 }
 /* Responsive styles */
-@media (min-width: 1000px) and (min-height: 1000px) {
-	#intro-header {
-		font-size: 110px;
-	}
-}
-@media (max-width: 800px), (max-height: 800px) {
-	#intro-header {
-		font-size: 70px;
-	}
-}
 @media (max-width: 650px), (max-height: 650px) {
 	#slideshow {
 		height: 300px;
@@ -998,13 +978,7 @@ body {
 	padding-bottom: 50px;
 	text-align: center;
 	color: #fff;
-}
-#skills-header {
-	font-family: 'Lobster', Georgia, Times, serif;
-	padding-bottom: 5px;
-	margin-top: 50px;
-	margin-bottom: 15px;
-}    
+}   
 #skills-list {
 	width: 90%;
     margin: 0 auto;
@@ -1111,14 +1085,10 @@ body {
 	background-image: url("../images/mountain2.jpg");
 	background-size: cover;
 	text-align: center;
-	padding: 50px 0;
+	padding-bottom: 50px;
 }
 #projects-header {
-	font-family: 'Lobster', Georgia, Times, serif;
 	text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
-	margin: 0;
-	padding-bottom: 5px;
-	margin-bottom: 15px;
 	color: #222;
 }
 #projects-wrapper {
@@ -1229,14 +1199,8 @@ body {
 	========= SECTION 4 ========= 
 	=============================  */
 #section-4 {
-	padding: 50px 0;
 	color: #fff;
-}
-#workplace-header {
-	font-family: 'Lobster', Georgia, Times, serif;
-	text-align: center;
-	color: #fff;
-	margin: 0;
+	padding-bottom: 50px;
 }
 .workplace {
 	font-size: 20px;
