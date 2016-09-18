@@ -931,6 +931,9 @@ body {
 	width: 60%;
 	margin: 0 auto;
 }
+#slideshow:hover {
+	cursor: pointer;
+}
 .intro-description-photo {
 	position: absolute;
 	width: 100%;
@@ -940,6 +943,7 @@ body {
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
 }
+
 #intro-description-photo-1 {
 	background-image: url("../images/seas-the-night.jpg");
 }

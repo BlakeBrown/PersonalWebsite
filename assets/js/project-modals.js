@@ -1,7 +1,7 @@
 function removeModal() {
 	$('#overlay').remove();
 	$('.modal').removeClass('fadeIn');
-	$('.modal').addClass('bounceOut');
+	$('.modal').addClass('fadeOut');
 	setTimeout(function() {
 		$('.modal').remove();
 	}, 750);
