@@ -666,7 +666,7 @@ body {
 	========= SECTION 0 ========= 
 	=============================  */
 #section-0 {
-	background: url(../images/stars.jpg) no-repeat center center; 
+	background: url(../images/stars2.jpg) no-repeat center center; 
 	background-size: cover;
 	background-color: #000;
 	position: relative;
@@ -1104,7 +1104,7 @@ body {
 	========= SECTION 3 ========= 
 	=============================  */
 #section-3 {
-	background-image: url("../images/mountain.jpg");
+	background-image: url("../images/mountain2.jpg");
 	background-size: cover;
 	text-align: center;
 	padding: 50px 0;
@@ -1172,11 +1172,11 @@ body {
 	background-size: cover;
 }
 #python-compiler {
-	background: url("../images/projects/python-compiler.jpg") no-repeat center center;
+	background: url("../images/projects/python-compiler2.jpg") no-repeat center center;
 	background-size: cover;
 }
 #noflix {
-	background: url("../images/projects/noflix.jpg") no-repeat center center;
+	background: url("../images/projects/noflix2.jpg") no-repeat center center;
 	background-size: cover;
 }
 #infinitefilespace {
@@ -1184,7 +1184,7 @@ body {
 	background-size: cover;
 }
 #indoor-navigator {
-	background: url("../images/projects/indoor-navigator.jpg") no-repeat center center;
+	background: url("../images/projects/indoor-navigator2.jpg") no-repeat center center;
 	background-size: cover;
 }
 
