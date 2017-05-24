@@ -41,7 +41,7 @@
 		<div id="profile-picture"></div>
 		<div id="profile-button-wrapper">
 			<a class="profile-button" href="http://www.github.com/blakebrown" target="_blank"><i class="profile-button-icon fa fa-git"></i></a>
-			<a class="profile-button" href="https://ca.linkedin.com/in/blakebrown1995" target="_blank"><i class="profile-button-icon fa fa-linkedin"></i></a>
+			<a class="profile-button" href="https://www.linkedin.com/in/blakelock" target="_blank"><i class="profile-button-icon fa fa-linkedin"></i></a>
 			<a class="profile-button" href="mailto:blake.brown@uwaterloo.ca" target="_blank"><i class="profile-button-icon fa fa-envelope"></i></a>
 			<a class="profile-button" href="https://www.hackerrank.com/blakebrown" target="_blank"><i class="profile-button-icon fa fa-laptop"></i></a>
 		</div>
@@ -49,15 +49,10 @@
 	<article id="section-1">
 		<div class="small-container">
 			<h2 class="large-header">Hello World</h2> 
-			<p class="description" style="margin-top:0">
-				Welcome to my website! My name is Blake Brown and I am an engineering student, full stack developer and aspiring entrepreneur. 
-				My goal in life is simple - I want to help advance society using my immense passion for science and technology. 
-				After all, why submit yourself to the homework torture in engineering if you're not going to put it to good use? :) 
- 				<br>
- 				<br>
- 				Enjoy exploring my website and learning more about Blake (also commonly pronounced <a class="link" href='https://www.youtube.com/watch?v=Dd7FixvoKBw' target="_blank">Balawkay</a>) in the process!
-				<br>
-				<br>
+			<p class="intro-description description" style="margin-top:0">
+			Welcome to my website! My name is Blake (also known as <a class="link" href='https://www.youtube.com/watch?v=Dd7FixvoKBw' target="_blank">Balawkay</a>) and I am an engineering student, full stack developer and aspiring entrepreneur. My goal in life is simple - I want to help advance society using my immense passion for science and technology. I believe strongly in leadership and empowering those around me to become the best people they can possibly be.
+			<br><br>
+			I am currently looking for awesome software internships in the Fall, please reach out if you think we would work well together :)
 			</p>
 			<div id="slideshow">
 				<div id="intro-description-photo-1" class="intro-description-photo opaque" data-photo-id="1"></div>
@@ -68,7 +63,7 @@
 			<div>
 		</div>
 	</article>
-	<article id="section-2">
+	<!-- <article id="section-2">
 		<div class="small-container">
 			<h3 class="large-header">Skills</h3>
 			<ul id="skills-list">
@@ -115,9 +110,9 @@
 						<span data-action="open-modal" data-identifier="filespace">Filespace</span>
 					</li>
 				</ul>
-			</div>
-		</div>
-	</article>
+			</div> -->
+		<!-- </div> -->
+	<!-- </article> -->
 	<article id="section-3">
 		<div class="container">
 			<h1 id="projects-header" class="large-header">Projects</h1>
@@ -170,16 +165,24 @@
 		<div class="small-container">
 			<h1 class="large-header">Work Experience</h1>
 			<div id="riviera" class="workplace animated">
+					<h1 class="work-title"><span class="eee">Wish</span> - <span class="white">Data Engineer</span></h1>
+					<h3 class="work-evaluation">
+						Co-op Evaluation: Excellent 
+					</h3>
+				<p class="work-description">Worked on Wish Platform, a team focused on creating the best possible marketplace experience for merchants</p>
+				<ul class="work-achievements">
+					<li>Rewrote data pipelines that power shipping estimates shown to users and merchants. Improved accuracy and reduced run time from 30 hours to 1 hour</li>
+					<li>Developed a real time unstructured text parser that calculates shipping logistics from tracking events. Leverages SQS to queue server-side processing</li>
+					<li>Built a dashboard for the internal fraud team which displays purchase metrics for a potentially fraudulent Wish user, powered by a new data pipeline</li>
+					<li>Quarterly hackathon project - tested a neural network image classifier on Wish products to automatically tag new products as soon as they are uploaded</li>
+				</ul>
+			</div>
+			<div id="riviera" class="workplace animated">
 					<h1 class="work-title"><span class="eee">Riviera Partners</span> - <span class="white">Full Stack Engineer</span></h1>
 					<h3 class="work-evaluation">
 						Co-op Evaluation: Outstanding 
-						<i class="fa fa-star light-red"></i> 
-						<i class="fa fa-star light-red"></i>
-						<i class="fa fa-star light-red"></i>
-						<i class="fa fa-star light-red"></i>
-						<i class="fa fa-star light-red"></i>
 					</h3>
-				<p class="work-description">Worked on Sutro, an internal recruiting app that allows for candidate tracking and detailed search</p>
+				<p class="work-description">Worked on Sutro, an internal recruiting app that allows for candidate tracking and search</p>
 				<ul class="work-achievements">
 					<li>Wrote Sidekiq workers in Ruby to deduplicate company data, resulting in 25% faster SQL queries due to the reduced table size in postgreSQL database</li>
 					<li>Worked with React.js to develop new frontend features such as interview and meeting history, increasing the productivity of company’s in-house recruiters</li>
@@ -191,11 +194,6 @@
 					<h1 class="work-title"><span class="eee">Genesys Labratories</span> - <span class="white">Front End Developer</span></h1>
 					<h3 class="work-evaluation">
 						Co-op Evaluation: Outstanding 
-						<i class="fa fa-star light-red"></i> 
-						<i class="fa fa-star light-red"></i>
-						<i class="fa fa-star light-red"></i>
-						<i class="fa fa-star light-red"></i>
-						<i class="fa fa-star light-red"></i>
 					</h3>
 				<p class="work-description">Worked on Designer, a one-year old Genesys cloud product that provides innovative customer support software for corporate companies</p>
 				<ul class="work-achievements">
@@ -208,11 +206,6 @@
 					<h1 class="work-title"><span class="eee">Ticketfi</span> - <span class="white">Full Stack Developer</span></h1>
 					<h3 class="work-evaluation">
 						Co-op Evaluation: Outstanding
-						<i class="fa fa-star light-red"></i> 
-						<i class="fa fa-star light-red"></i>
-						<i class="fa fa-star light-red"></i>
-						<i class="fa fa-star light-red"></i>
-						<i class="fa fa-star light-red"></i>
 					</h3>
 				<p class="work-description">Worked for a ticketing startup with the goal of empowering users to design beautiful event pages</p>
 				<ul class="work-achievements">
@@ -225,9 +218,6 @@
 					<h1 class="work-title"><span class="eee">TELUS Health</span> - <span class="white">Software Developer</span></h1>
 					<h3 class="work-evaluation">
 						Co-op Evaluation: Very Good
-						<i class="fa fa-star light-red"></i> 
-						<i class="fa fa-star light-red"></i>
-						<i class="fa fa-star light-red"></i>
 					</h3>
 				<p class="work-description">Worked on PS Suite, an electronic medical record service for doctors</p>
 				<ul class="work-achievements">

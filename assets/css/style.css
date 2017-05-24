@@ -437,7 +437,8 @@ body {
 }
 .noflix-thumbnail-1 {
 	background: url("../images/projects/noflix-thumb1.png") no-repeat;
-	background-size: cover;
+	background-size: contain;
+	width: 214px;
 }
 .noflix-thumbnail-2 {
 	background: url("../images/projects/noflix-thumb2.jpeg") no-repeat;
@@ -569,6 +570,15 @@ body {
 	.modal-thumbnail-tall {
 		width: 300px;
 	}
+	.noflix-thumbnail-1 {
+		width: 214px
+	}
+	.modal-image-arrow-left {
+		left: 10%;
+	}
+	.modal-image-arrow-right {
+		right: 10%;
+	}
 }
 @media screen and (max-height: 850px) {
 	.modal {
@@ -605,6 +615,9 @@ body {
 	.modal-thumbnail-tall {
 		height: 270px;
 		width: 175px;
+	}
+	.noflix-thumbnail-1 {
+		width: 153px;
 	}
 	.modal-button {
 		font-size: 18px;
@@ -908,12 +921,10 @@ body {
 #section-1 {
 	text-align: center;
 	color: #fff;
+	padding-bottom: 55px;
 }
 .intro-description {
-	font-family: 'Lato', 'Helvetica', sans-serif;
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 24px;
+	padding-bottom: 25px;
 }
 #slideshow {
 	position: relative;
@@ -1214,7 +1225,7 @@ body {
 	box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);*/
 }
 .work-title {
-	font-family: 'Arvo', serif;
+	font-family: 'Lato', serif;
 	font-size: 30px;
 	margin: 0;
 }
